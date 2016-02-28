@@ -157,6 +157,9 @@ a{
   .small-container{
     width: 940px;
   }
+  .middle-container{
+    width: 1040px;
+  }
 }
 .container-fluid {
   margin-right: auto;
