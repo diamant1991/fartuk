@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>image catalog</title>
+	<title>image catalog 2</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="keywords" content="" >
 	<meta name="description" content="">
@@ -196,174 +196,241 @@
 	</nav>
 	<!-- nav -->
 
-	<div class="inner-title" style="background-image: url(images/inner-title3.jpg)">
-		<div class="container">
-			<div class="inner-title__img">
-				<div class="table-block">
-					<div class="block-vertical">
-						<div class="inner-search">
-							<div class="inner-search__item">
-								<input type="text" placeholder="Поиск изображений" class="inner-search__input">
-								<div class="select">
-									<a href="javascript:void(0);" class="slct">Для всех продуктов</a>
-									<ul class="drop">
-										<li>Select 1</li>
-										<li>Select 2</li>
-										<li>Select 3</li>
-										<li>Select 4</li>
-									</ul>
-									<input type="hidden" id="select">
+	<div class="image-content">
+		<div class="container clearfix">
+			<div class="col-md-2">
+				<div class="row">
+					<aside class="sidebar">
+						<div class="sidebar__item">
+							<div class="sidebar__title">Тип изображения</div>
+							<div class="sidebar__check">
+								<ul>
+									<li>
+										<input type="radio" name="radio" class="checkbox" id="radio">
+										<label for="radio">Фотографии</label>
+									</li>
+									<li>
+										<input type="radio" name="radio" class="checkbox" id="radio2">
+										<label for="radio2">Иллюстрации</label>
+									</li>
+									<li>
+										<input type="radio" name="radio" class="checkbox" id="radio3">
+										<label for="radio3">Все</label>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="sidebar__item">
+							<div class="sidebar__title">Изображения для</div>
+							<div class="sidebar__check">
+								<ul>
+									<li>
+										<input type="checkbox" name="radio" class="checkbox" id="check">
+										<label for="check">Фартук</label>
+									</li>
+									<li>
+										<input type="checkbox" name="radio" class="checkbox" id="check2">
+										<label for="check2">Фотообои</label>
+									</li>
+									<li>
+										<input type="checkbox" name="radio" class="checkbox" id="check3">
+										<label for="check3">Фотопанно</label>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="sidebar__item">
+							<div class="sidebar__title">Выбор по цвету</div>
+							<div class="sidebar__color">
+								<span class="sidebar__select">#c6fafa</span>
+							</div>
+						</div>
+					</aside>				
+				</div>
+			</div>
+			<div class="col-md-10">
+				<div class="row">
+					<article class="image-wrapp">
+						<div class="category-filter-wrapp second clearfix">
+							<div class="category-filter__text">
+								Поиск <br>по категориям
+							</div>
+							<div class="category-filter__item">
+								<ul>
+									<li><a href="#">Абстрактные изображения</a></li>
+									<li><a href="#">Бизнес / финансы</a></li>
+									<li><a href="#">Векторные изображения</a></li>
+									<li><a href="#">Винтаж</a></li>
+									<li><a href="#">Еда и напитки</a></li>
+								</ul>
+							</div>
+							<div class="category-filter__item">
+								<ul>
+									<li><a href="#">Животные/дикая природа</a></li>
+									<li><a href="#">Здания/ Достопримечательности</a></li>
+									<li><a href="#">Знаки/Символы</a></li>
+									<li><a href="#">Знаменитости</a></li>
+									<li><a href="#">Иллюстрации/ Клип-арт</a></li>
+								</ul>
+							</div>
+							<div class="category-filter__item">
+								<ul>
+									<li><a href="#">Интерьеры</a></li>
+									<li><a href="#">Искусство</a></li>
+									<li><a href="#">Красота/мода</a></li>
+									<li><a href="#">Лицензия Editorial</a></li>
+									<li><a href="#">Люди</a></li>
+								</ul>
+							</div>
+							<div class="category-filter__item">
+								<ul>
+									<li><a href="#" class="active">Парки / Природа</a></li>
+									<li><a href="#">Природа</a></li>
+									<li><a href="#">Спорт / Отдых</a></li>
+									<li><a href="#">Еда / Напитки</a></li>
+									<li><a href="#">Фоны/текстуры</a></li>
+								</ul>
+							</div>
+							<div class="category-filter__bottom clearfix">
+								<div class="popular-image__search">
+									<a href="#">
+										<img src="images/p-image-search.png" alt="">
+									</a>
+								</div>
+								<div class="popular-image__display">
+									<a href="#" class="p-image__icon small"></a>
+									<a href="#" class="p-image__icon middle active"></a>
+									<a href="#" class="p-image__icon large"></a>
 								</div>
 							</div>
-							<div class="inner-search__btn">
-								<a href="#" class="item__link">Найти</a>
+						</div>
+						<div class="popular-image">
+							<div class="popular-image__header clearfix">
+								<div class="item__title">
+									Каталог изображений: 
+									<span>Парки / Природа</span>
+								</div>
+								<div class="popular-image__display">
+									<div class="pagination__item">
+										<span class="pagination__text">
+											Страница
+										</span>
+										<span class="pagination__page">
+											<a href="#" class="pagination__arrow prev"></a>
+											<input type="text" value="1" class="pagination__input">
+											<a href="#" class="pagination__arrow next"></a>
+										</span>
+										<span class="pagination__text">
+											из 24
+										</span>
+									</div>
+								</div>
+							</div>
+							<div class="popular-image__list second clearfix">
+								<div class="popular-image__line clearfix">
+									<div class="col-md-4">
+										<div class="row">
+											<div class="popular-image__item">
+												<img src="images/popular-image.jpg" alt="">
+												<div class="popular-image__more">
+													<div class="popular-image__more-content">
+														<div class="container">
+															
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="row">
+											<div class="popular-image__item">
+												<img src="images/popular-image.jpg" alt="">
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="row">
+											<div class="popular-image__item">
+												<img src="images/popular-image.jpg" alt="">
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								<div class="popular-image__line clearfix">
+									<div class="col-md-4">
+										<div class="row">
+											<div class="popular-image__item">
+												<img src="images/popular-image.jpg" alt="">
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="row">
+											<div class="popular-image__item">
+												<img src="images/popular-image.jpg" alt="">
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="row">
+											<div class="popular-image__item">
+												<img src="images/popular-image.jpg" alt="">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="popular-image__line clearfix">
+									<div class="col-md-4">
+										<div class="row">
+											<div class="popular-image__item">
+												<img src="images/popular-image.jpg" alt="">
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="row">
+											<div class="popular-image__item">
+												<img src="images/popular-image.jpg" alt="">
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="row">
+											<div class="popular-image__item">
+												<img src="images/popular-image.jpg" alt="">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="pagination clearfix">
+								<div class="pagination__item">
+									<span class="pagination__text">
+										Страница
+									</span>
+									<span class="pagination__page">
+										<a href="#" class="pagination__arrow prev"></a>
+										<input type="text" value="1" class="pagination__input">
+										<a href="#" class="pagination__arrow next"></a>
+									</span>
+									<span class="pagination__text">
+										из 24
+									</span>
+								</div>
+								<div class="pagination__link">
+									<a href="#">Следующая страница</a>
+								</div>
 							</div>
 						</div>
-					</div>
+					</article>	
 				</div>
 			</div>
 		</div>
 	</div>
-	<!-- inner-title -->
 	
-	<div class="category-filter">
-		<div class="container middle-container">
-			<div class="category-filter-wrapp clearfix">
-				<div class="category-filter__text">
-					Поиск <br>по категориям
-				</div>
-				<div class="category-filter__item">
-					<ul>
-						<li><a href="#">Абстрактные изображения</a></li>
-						<li><a href="#">Бизнес / финансы</a></li>
-						<li><a href="#">Векторные изображения</a></li>
-						<li><a href="#">Винтаж</a></li>
-						<li><a href="#">Еда и напитки</a></li>
-					</ul>
-				</div>
-				<div class="category-filter__item">
-					<ul>
-						<li><a href="#">Животные/дикая природа</a></li>
-						<li><a href="#">Здания/ Достопримечательности</a></li>
-						<li><a href="#">Знаки/Символы</a></li>
-						<li><a href="#">Знаменитости</a></li>
-						<li><a href="#">Иллюстрации/ Клип-арт</a></li>
-					</ul>
-				</div>
-				<div class="category-filter__item">
-					<ul>
-						<li><a href="#">Интерьеры</a></li>
-						<li><a href="#">Искусство</a></li>
-						<li><a href="#">Красота/мода</a></li>
-						<li><a href="#">Лицензия Editorial</a></li>
-						<li><a href="#">Люди</a></li>
-					</ul>
-				</div>
-				<div class="category-filter__item">
-					<ul>
-						<li><a href="#">Парки / Природа</a></li>
-						<li><a href="#">Природа</a></li>
-						<li><a href="#">Спорт / Отдых</a></li>
-						<li><a href="#">Еда / Напитки</a></li>
-						<li><a href="#">Фоны/текстуры</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- category-filter -->
-
-	<div class="popular-image">
-		<div class="container middle-container">
-			<div class="popular-image__header clearfix">
-				<div class="item__title">Популярные изображения</div>
-				<div class="popular-image__display">
-					<a href="#" class="p-image__icon small"></a>
-					<a href="#" class="p-image__icon middle active"></a>
-					<a href="#" class="p-image__icon large"></a>
-				</div>
-			</div>
-			<div class="popular-image__list clearfix">
-				<div class="col-md-4">
-					<div class="row">
-						<div class="popular-image__item">
-							<img src="images/popular-image.jpg" alt="">
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="row">
-						<div class="popular-image__item">
-							<img src="images/popular-image.jpg" alt="">
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="row">
-						<div class="popular-image__item">
-							<img src="images/popular-image.jpg" alt="">
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="row">
-						<div class="popular-image__item">
-							<img src="images/popular-image.jpg" alt="">
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="row">
-						<div class="popular-image__item">
-							<img src="images/popular-image.jpg" alt="">
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="row">
-						<div class="popular-image__item">
-							<img src="images/popular-image.jpg" alt="">
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="row">
-						<div class="popular-image__item">
-							<img src="images/popular-image.jpg" alt="">
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="row">
-						<div class="popular-image__item">
-							<img src="images/popular-image.jpg" alt="">
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="row">
-						<div class="popular-image__item">
-							<img src="images/popular-image.jpg" alt="">
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="product-text second">
-		<div class="container middle-container">
-			<div class="product-text__item">
-				<div class="item__title">Каталог изображений</div>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fermentum turpis est, vitae fringilla tortor vestibulum ut. Proin finibus, ligula ultricies bibendum viverra, enim tortor ultricies lacus, non vestibulum nibh arcu a orci. Nam porttitor, sapien eu feugiat sodales, neque sapien elementum erat, non egestas purus lacus eu tortor. Aenean elementum ultricies maximus. Vivamus finibus mollis neque. In hac habitasse platea dictumst. Curabitur dui orci, iaculis sit amet mauris in, ultrices hendrerit lorem.
-				</p>
-				<p>
-					Suspendisse potenti. Vestibulum et aliquet libero. Nulla luctus ex ac tempus ullamcorper. Vestibulum posuere mauris sit amet molestie pulvinar. Nullam dapibus ex risus, ac auctor sem placerat at. Cras luctus id nibh quis pellentesque. Praesent fermentum nulla ac sem accumsan vestibulum. Praesent ac lacinia urna. Maecenas non porttitor nibh, et hendrerit arcu. Proin lacinia hendrerit tortor, congue porttitor ex blandit aliquet. Donec in lorem neque. Praesent et magna ac libero facilisis suscipit vel ac ante. Sed at urna elementum, luctus risus non, sagittis ante. Ut ut mi ex.
-				</p>
-			</div>
-		</div>
-	</div>
+	<!-- image-content -->
 
 	<footer class="footer">
 		<div class="footer__top">
@@ -519,8 +586,7 @@
 	</footer>
 
 
-
-
 	<script src="js/vendor.min.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>
