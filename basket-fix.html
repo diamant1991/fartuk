@@ -180,12 +180,12 @@
 					</ul>
 				</li>
 			</ul>
-			<div class="basket-block">
+			<div class="basket-block active">
 				<div class="table-block">
 					<div class="block-vertical">
 						<a href="#" class="basket__link">
 							<span class="basket__icon">
-								<img src="images/basket-icon.png" alt="">
+								<img src="images/basket-icon-active.png" alt="">
 							</span>
 							<span class="basket__label">2</span>
 						</a>
@@ -215,7 +215,7 @@
 			</div>
 			<div class="item__title">Ваша корзина</div>
 			<div class="basket-wrapp clearfix">
-				<div class="col-md-9">
+				<div class="col-md-8">
 					<div class="row">
 						<div class="basket__item">
 							<div class="basket__item-inner">
@@ -223,30 +223,101 @@
 									<table>
 										<tr>
 											<td>
-												<img src="" alt="">
+												<img src="images/baket-img.jpg" alt="">
 											</td>
 											<td>
 												<a href="#" class="basket__name">Лампа настольная, бирюзовый цвет</a>
 												<div class="basket__info">
-													<div>Цена за 1шт</div>
-													<div>
+													<div class="basket__info-number">Цена за 1шт</div>
+													<div class="basket__info-price">
 														<span class="basket__prev-price">300 <span class="rub">c</span></span>
 														<span class="today__price-price">250 <span class="rub">c</span></span>
 													</div>
 												</div>
 											</td>
 											<td>
-												<div class="basket__amount">
-													<a href="#"></a>
-													<input type="text" value="3">
-													<a href="#"></a>
+												<div class="basket__amount clearfix">
+													<a href="#" class="amount__minus">-</a>
+													<input type="text" value="3" class="amount__input">
+													<a href="#" class="amount__plus">+</a>
 												</div>
 												<div class="basket__total">
-													<div>Итого</div>
+													<div class="basket__info-number">Итого</div>
 													<div class="basket__total-price">
 														750 <span class="rub">c</span>
 													</div>
 												</div>
+											</td>
+											<td>
+												<a href="#" class="del__basket">
+													<img src="images/del-basket.png" alt="">
+												</a>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<img src="images/baket-img.jpg" alt="">
+											</td>
+											<td>
+												<a href="#" class="basket__name">Лампа настольная, бирюзовый цвет</a>
+												<div class="basket__info">
+													<div class="basket__info-number">Цена за 1шт</div>
+													<div class="basket__info-price">
+														<span class="basket__prev-price">300 <span class="rub">c</span></span>
+														<span class="today__price-price">250 <span class="rub">c</span></span>
+													</div>
+												</div>
+											</td>
+											<td>
+												<div class="basket__amount clearfix">
+													<a href="#" class="amount__minus">-</a>
+													<input type="text" value="3" class="amount__input">
+													<a href="#" class="amount__plus">+</a>
+												</div>
+												<div class="basket__total">
+													<div class="basket__info-number">Итого</div>
+													<div class="basket__total-price">
+														750 <span class="rub">c</span>
+													</div>
+												</div>
+											</td>
+											<td>
+												<a href="#" class="del__basket">
+													<img src="images/del-basket.png" alt="">
+												</a>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<img src="images/baket-img.jpg" alt="">
+											</td>
+											<td>
+												<a href="#" class="basket__name">Лампа настольная, бирюзовый цвет</a>
+												<div class="basket__info">
+													<div class="basket__info-number">Цена за 1шт</div>
+													<div class="basket__info-price">
+														<span class="basket__prev-price">300 <span class="rub">c</span></span>
+														<span class="today__price-price">250 <span class="rub">c</span></span>
+													</div>
+												</div>
+											</td>
+											<td>
+												<div class="basket__amount clearfix">
+													<a href="#" class="amount__minus">-</a>
+													<input type="text" value="3" class="amount__input">
+													<a href="#" class="amount__plus">+</a>
+												</div>
+												<div class="basket__total">
+													<div class="basket__info-number">Итого</div>
+													<div class="basket__total-price">
+														750 <span class="rub">c</span>
+													</div>
+												</div>
+											</td>
+											<td>
+												<a href="#" class="del__basket">
+													<img src="images/del-basket.png" alt="">
+												</a>
 											</td>
 										</tr>
 									</table>
@@ -255,9 +326,335 @@
 						</div>
 					</div>
 				</div>
+				<div class="col-md-4">
+					<div class="row">
+						<div class="basket__item">
+							<div class="basket__receipt">
+								<div class="p__sidebar-title">
+									Способ получения заказа
+								</div>
+								<div class="sidebar__check">
+									<ul>
+										<li>
+											<input type="radio" name="radio" class="checkbox" id="radio">
+											<label for="radio">Самовывоз со склада <span class="info__icon"><img src="images/info.png" alt=""></span></label>
+										</li>
+										<li>
+											<input type="radio" name="radio" class="checkbox" id="radio2">
+											<label for="radio2">Доставка</label>
+										</li>
+									</ul>
+								</div>
+								<div class="select">
+									<a href="javascript:void(0);" class="slct">В пределах МКАД</a>
+									<ul class="drop">
+										<li>Select 1</li>
+										<li>Select 2</li>
+										<li>Select 3</li>
+										<li>Select 4</li>
+									</ul>
+									<input type="hidden" id="select">
+								</div>
+								<div class="clear"></div>
+							</div>
+							<div class="basket__total-block">
+								<div class="p__sidebar-title bold">
+									Итого
+								</div>
+								<div class="basket-order__price">
+									<ul>
+										<li class="clearfix">
+											<span class="basket-order__text">Количество товаров</span>
+											<span class="basket-order__var">9 шт</span>
+										</li>
+										<li class="clearfix">
+											<span class="basket-order__text">Стоимость товаров</span>
+											<span class="basket-order__var">2 250 <span class="rub">c</span></span>
+										</li>
+										<li class="clearfix">
+											<span class="basket-order__text">Доставка</span>
+											<span class="basket-order__var green">Бесплатно</span>
+										</li>
+									</ul>
+								</div>
+								<div class="basket__sum clearfix">
+									<span class="basket-order__text">Всего к оплате</span>
+									<span class="basket-order__var large-price">2 250 <span class="rub">c</span></span>
+								</div>
+								<div class="basket-order__link">
+									<a href="#" class="item__link">
+										Оформить заказ
+									</a>
+								</div>
+								<div class="basket-order__link">
+									<a href="#" class="item__link">
+										Заказ в 1 клик
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="ideas" style="background: url(images/ideas2.jpg)">
+			<div class="container clearfix">
+				<div class="delivery__text">
+					<div class="table-block">
+						<div class="block-vertical">
+							<div class="ideas__title">
+								Доставка по России
+							</div>
+							<p>
+								Доставляем товары по России <br> 
+								Nullam diam felis, tristique ut tellus in
+							</p>
+							<a href="#" class="item__link">Подробнее</a>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
+
+	<div class="product">
+		<div class="container small-container">
+			<div class="item__title">
+				Практичные и стильные детали дома 
+			</div>
+			<div class="small-item__title">
+				У нас чаще заказывают эти товары
+			</div>
+			<div class="product-wrapp clearfix">
+				<div class="col-md-8">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="row">
+								<div class="product__item">
+									<a href="#">
+										<div class="product__item-inner" style="background-image: url(images/product1.jpg)">
+											<div class="product__name">
+												Фартух для кухни
+											</div>
+											<div class="product__price">
+												от 4 500
+												<span class="rub">c</span>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="row">
+								<div class="product__item">
+									<a href="#">
+										<div class="product__item-inner" style="background-image: url(images/product2.jpg)">
+											<div class="product__name">
+												Фотопанно
+											</div>
+											<div class="product__price">
+												от 500
+												<span class="rub">c</span>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="row">
+								<div class="product__item">
+									<a href="#">
+										<div class="product__item-more">
+											<div class="table-block">
+												<div class="block-vertical">Ещё</div>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="row">
+						<div class="product__item">
+							<a href="#">
+								<div class="product__item-inner product-large" style="background-image: url(images/product3.jpg)">
+									<div class="table-block">
+										<div class="block-vertical">
+											<div class="product__name">
+												Фотоплитка
+											</div>
+											<div class="product__price">
+												от 3 000
+												<span class="rub">c</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- product -->
+
+	<footer class="footer">
+		<div class="footer__top">
+			<div class="container">
+				<div class="footer-wrapp clearfix">
+					<div class="col-md-2">
+						<div class="row">
+							<ul class="footer__list">
+								<li>
+									<a href="#" class="footer__list_title">Компания</a>
+									<ul>
+										<li>
+											<a href="#">О компании</a>
+										</li>
+										<li>
+											<a href="#">Проекты</a>
+										</li>
+										<li>
+											<a href="#">Новости и статьи</a>
+										</li>
+										<li>
+											<a href="#">Контактные данные</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<ul class="footer__list">
+								<li>
+									<a href="#" class="footer__list_title">Покупателям</a>
+									<ul>
+										<li><a href="#">Оплата и доставка</a></li>
+										<li><a href="#">Монтаж</a></li>
+										<li><a href="#">Цены</a></li>
+										<li><a href="#">Помощь</a></li>
+										<li><a href="#">Как сделать заказ</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="row">
+							<ul class="footer__list">
+								<li>
+									<a href="#">Продукция</a>
+									<ul>
+										<li><a href="#">Фартук для кухни</a></li>
+										<li><a href="#">Фотопанно</a></li>
+										<li><a href="#">Фотоплитка</a></li>
+										<li><a href="#">Фотообои</a></li>
+									</ul>
+								</li>
+							</ul>
+							<ul class="footer__list">
+								<li>
+									<a href="#">Принимаем</a>
+									<ul class="clearfix">
+										<li class="payment__item">
+											<a href="#">
+												<img src="images/visa.jpg" alt="">
+											</a>
+										</li>
+										<li class="payment__item">
+											<a href="#">
+												<img src="images/mastercard.jpg" alt="">
+											</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-8">
+						<div class="row">
+							<div class="footer__title">
+								Pro Fartuk
+							</div>
+							<div class="footer__text">
+								г. Москва, ул. Авиамоторная д. 50, стр. 2 <br>
+								Предупредите нас о своем приезде по телефону: 8 (499) 647–77–39
+							</div>
+							<div class="foot__map">
+								<img src="images/map.jpg" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer__bottom clearfix">
+			<div class="container">
+				<div class="col-md-3">
+					<div class="row">
+						<div class="social__item">
+							<div class="table-block">
+								<div class="block-vertical">
+									<ul class="socail__list clearfix">
+										<li>
+											<a href="#">
+												<img src="images/twitter.png" alt="">
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="images/facebook.png" alt="">
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="images/vimeo.png" alt="">
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="images/facebook.png" alt="">
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="row">
+						<div class="widget">
+							<div class="table-block">
+								<div class="block-vertical">
+									<img src="images/widget.png" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="row">
+						<div class="footer__design">
+							<div class="table-block">
+								<div class="block-vertical">
+									<span class="design__info">
+										Дизайн разработан в <a href="#">MAKEDESIGN</a>
+									</span>
+									<span class="design__icon">
+										<img src="images/design-logo.png" alt="">
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
 
 
 
