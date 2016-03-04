@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>order delivery</title>
+	<title>order export</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="keywords" content="" >
 	<meta name="description" content="">
@@ -116,97 +116,81 @@
 								</div>
 								<div class="order__step">
 									<div class="order__title">
-										2. Выберите адрес доставки
+										2. Выберите пункт самовывоза
 									</div>
-									<div class="adress-wrapp clearfix">
-										<div class="col-sm-6">
-											<div class="row">
-												<div class="adress__item">
-													<div class="adress-input-block">
-														<div class="adress__label">
-															Населенный пункт
-														</div>
-														<input type="text" class="order__input">
+									<div class="pickup__item active">
+										<div class="pickup-inner">
+											<div class="pickup__check">
+												<input type="radio" name="radio" class="checkbox" id="radio">
+												<label for="radio"></label>
+											</div>
+											<div class="pickup__text">
+												<div class="pickup-title clearfix">
+													<div class="metro__text">
+														<span>
+															<img src="images/metro.png" alt="">
+														</span>
+														<span>Бабушкинская</span>
 													</div>
-													<div class="adress-input-block">
-														<div class="adress__label">
-															Адрес доставки
-														</div>
-														<input type="text" class="order__input">
-													</div>
-													<div class="adress-input-block">
-														<div class="adress__label">
-															Станция метро
-														</div>
-														<input type="text" class="order__input">
+													<div class="pickup__day">
+														сегодня
 													</div>
 												</div>
-											</div>
-										</div>
-										<div class="col-sm-6">
-											<div class="row">
-												<div class="adress__item">
-													<div class="adress-input-block">
-														<div class="adress__label">
-															Комментарий к заказу
-														</div>
-														<textarea class="order__textarea" placeholder="Введите дополнительную информацию"></textarea>
-													</div>
+												<div class="pickup__descr">
+													<p>Москва, Менжинского ул., д.38, Бабушкинская</p>
+													<p>Понедельник – Воскресенье с 10:00 до 22:00</p>
 												</div>
 											</div>
 										</div>
 									</div>
-								</div>
-								<div class="order__step">
-									<div class="order__title">
-										3. Дата и время доставки
-									</div>
-									<div class="date__info">
-										Уточнит наш менеджер после оформления заказа
-									</div>
-								</div>
-								<div class="order__step">
-									<div class="order__title">
-										4. Способ оплаты
-									</div>
-									<div class="process__item active">
-										<div class="process__title">
-											Оплатить при получении товара
-										</div>
-										<div class="process__small-title">
-											Оплата заказа наличными или картами при получении
-										</div>
-										<div class="process__radio clearfix">
-											<ul class="clearfix">
-												<li>
-													<input type="radio" name="radio" class="checkbox" id="radio">
-													<label for="radio">Наличными</label>
-												</li>
-												<li>
-													<input type="radio" name="radio" class="checkbox" id="radio2">
-													<label for="radio2">Банковской картой</label>
-												</li>
-											</ul>
+									<div class="pickup__item">
+										<div class="pickup-inner">
+											<div class="pickup__check">
+												<input type="radio" name="radio" class="checkbox" id="radio2">
+												<label for="radio2"></label>
+											</div>
+											<div class="pickup__text">
+												<div class="pickup-title clearfix">
+													<div class="metro__text">
+														<span>
+															<img src="images/metro.png" alt="">
+														</span>
+														<span>Бабушкинская</span>
+													</div>
+													<div class="pickup__day">
+														сегодня
+													</div>
+												</div>
+												<div class="pickup__descr">
+													<p>Москва, Менжинского ул., д.38, Бабушкинская</p>
+													<p>Понедельник – Воскресенье с 10:00 до 22:00</p>
+												</div>
+											</div>
 										</div>
 									</div>
-									<div class="process__item">
-										<div class="process__title">
-											Оплатить сейчас онлайн
-										</div>
-										<div class="process__small-title">
-											Оплата сразу банковской картой или по банковскому счету
-										</div>
-										<div class="process__radio clearfix">
-											<ul class="clearfix">
-												<li>
-													<input type="radio" name="radio2" class="checkbox" id="radio3">
-													<label for="radio3">Наличными</label>
-												</li>
-												<li>
-													<input type="radio" name="radio2" class="checkbox" id="radio4">
-													<label for="radio4">Банковской картой</label>
-												</li>
-											</ul>
+									<div class="pickup__item">
+										<div class="pickup-inner">
+											<div class="pickup__check">
+												<input type="radio" name="radio" class="checkbox" id="radio3">
+												<label for="radio3"></label>
+											</div>
+											<div class="pickup__text">
+												<div class="pickup-title clearfix">
+													<div class="metro__text">
+														<span>
+															<img src="images/metro.png" alt="">
+														</span>
+														<span>Бабушкинская</span>
+													</div>
+													<div class="pickup__day">
+														сегодня
+													</div>
+												</div>
+												<div class="pickup__descr">
+													<p>Москва, Менжинского ул., д.38, Бабушкинская</p>
+													<p>Понедельник – Воскресенье с 10:00 до 22:00</p>
+												</div>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -219,7 +203,8 @@
 						<div class="order__item">
 							<div class="order__item-info">
 								<div class="order__item-info-title">
-									 В заказе: <b>9 товаров</b>
+									 <p>В заказе: <b>9 товаров</b> с учетом доставки и скидки на сумму</p>
+									 <div class="basket-order__var large-price">2 250 <span class="rub">c</span></div>
 								</div>
 								<ul>
 									<li>
@@ -256,27 +241,6 @@
 										</div>
 									</li>
 								</ul>
-							</div>
-							<div class="basket__total-block">
-								<div class="p__sidebar-title bold">
-									Итого
-								</div>
-								<div class="basket-order__price">
-									<ul>
-										<li class="clearfix">
-											<span class="basket-order__text">Стоимость товаров</span>
-											<span class="basket-order__var">2 250 <span class="rub">c</span></span>
-										</li>
-										<li class="clearfix">
-											<span class="basket-order__text">Доставка</span>
-											<span class="basket-order__var green">Бесплатно</span>
-										</li>
-									</ul>
-								</div>
-								<div class="basket__sum clearfix">
-									<span class="basket-order__text">Всего к оплате</span>
-									<span class="basket-order__var large-price">2 250 <span class="rub">c</span></span>
-								</div>
 							</div>
 							<a href="#" class="order__link">Завершить оформление</a>
 							<div class="order__info-text">
