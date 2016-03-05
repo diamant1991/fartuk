@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>order photo panel</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="keywords" content="" >
+	<meta name="description" content="">
+	<link rel="stylesheet" href="css/vendor.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>a
+	<![endif]-->
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="logo">
+				<div class="table-block">
+					<div class="block-vertical">
+						<a href="#">
+							<img src="images/logo.png" alt="">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="header__contact">
+				<div class="table-block">
+					<div class="block-vertical">
+						<div class="telephone">
+							<span class="telephone__code">8 800</span>
+							<span class="telephone__number">555–55–558</span>
+						</div>
+						<div class="header__time">
+							с 9<sup>00</sup> до 18<sup>00</sup> (пн—пт)
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header__contact">
+				<div class="table-block">
+					<div class="block-vertical">
+						<div class="telephone">
+							<span class="telephone__code">8 499</span>
+							<span class="telephone__number">647-77-39</span>
+						</div>
+						<a href="#" class="get-call">
+							Заказать звонок
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="header__recom">
+				<div class="table-block">
+					<div class="block-vertical">
+						<a href="#">
+							<img src="images/fazenda.png" alt="">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="catalog__link">
+				<div class="table-block">
+					<div class="block-vertical">
+						<a href="#" class="catalog__link-label">
+							<span>Каталог изображений</span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="enter__link">
+				<div class="table-block">
+					<div class="block-vertical">
+						<a class="enter__link-label" data-toggle="modal" data-target="#myModal">
+							Вход
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- header -->
+
+	<nav class="nav">
+		<div class="container">
+			<ul class="catalog-menu">
+				<li class="catalog-menu__item">
+					<a href="#">Каталог продукции</a>
+					<ul class="dropdown-menu clearfix">
+						<li class="catalog-menu__item_child clearfix">
+							<a href="#" class="catalog-menu__label">Наше производство</a>
+							<ul>
+								<li>
+									<a href="#" class="menu__label">Фартук для кухни</a>
+								</li>
+								<li>
+									<a href="#" class="menu__label">Фотопанно</a>
+								</li>
+								<li>
+									<a href="#" class="menu__label">Фотоплитка</a>
+								</li>
+								<li>
+									<a href="#" class="menu__label">Фотообои</a>
+								</li>
+								<li>
+									<a href="#" class="menu__label">Витражи</a>
+								</li>
+							</ul>
+						</li>
+						<li class="catalog-menu__item_child">
+							<a href="#" class="catalog-menu__label">Комплектующие</a>
+							<ul>
+								<li>
+									<a href="#" class="menu__label">
+									Освещение</a>
+								</li>
+								<li>
+									<a href="#" class="menu__label">Розетки и рейлинги</a>
+								</li>
+								<li>
+									<a href="#" class="menu__label">Экраны на батарею</a>
+								</li>
+								<li>
+									<a href="#" class="menu__label">Жалюзи</a>
+								</li>
+								<li>
+									<a href="#" class="menu__label">Магниты на холодильник</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			<ul class="nav-menu clearfix">
+				<li class="nav-menu__item">
+					<a href="#" class="search__btn">
+						<img src="images/search-icon.png" alt="">
+					</a>
+				</li>
+				<li class="nav-menu__item">
+					<a href="#">О компании</a>
+				</li>
+				<li class="nav-menu__item">
+					<a href="#">Проекты</a>
+				</li>
+				<li class="nav-menu__item">
+					<a href="#">Оплата и доставка</a>
+				</li>
+				<li class="nav-menu__item">
+					<a href="#">Монтаж</a>
+				</li>
+				<li class="nav-menu__item">
+					<a href="#">Цены</a>
+				</li>
+				<li class="nav-menu__item">
+					<a href="#">Статьи</a>
+				</li>
+				<li class="nav-menu__item">
+					<a href="#">Контактные данные</a>
+				</li>
+				<li class="nav-menu__item with-drop">
+					<a href="#">Ещё</a>
+					<ul class="dropdown-menu clearfix">
+						<li class="nav-menu__drop">
+							<a href="#" class="menu__label">Освещение</a>
+						</li>
+						<li class="nav-menu__drop">
+							<a href="#" class="menu__label">Розетки и рейлинги</a>
+						</li>
+						<li class="nav-menu__drop">
+							<a href="#" class="menu__label">Экраны на батарею</a>
+						</li>
+						<li class="nav-menu__drop">
+							<a href="#" class="menu__label">Жалюзи</a>
+						</li>
+						<li class="nav-menu__drop">
+							<a href="#" class="menu__label">Магниты на холодильник</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			<div class="basket-block">
+				<div class="table-block">
+					<div class="block-vertical">
+						<a href="#" class="basket__link">
+							<span class="basket__icon">
+								<img src="images/basket-icon.png" alt="">
+							</span>
+							<span class="basket__label">2</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<!-- nav -->
+
+	<div class="content">
+		<div class="container small-container">
+			<div class="item__title">Оформление заказа на фотопанно</div>
+			<div class="decor-wrapp">
+				<div class="decor__step">
+					<div class="decor__step-item clearfix">
+						<div class="col-md-4">
+							<div class="row">
+								<div class="calc__step-block">
+									<div>
+										<span class="calc__step-number">
+											1
+										</span>
+										<span class="calc__step-title">Выберите<br>изображение</span>
+									</div>
+									<div class="calc__help">
+										<a href="#">
+											<img src="images/info.png" alt="">
+											Помощь
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="calc__check">
+								<input type="radio" name="radio" class="checkbox" id="radio">
+								<label for="radio">Изображение из каталога</label>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="calc__check">
+								<input type="radio" name="radio" class="checkbox" id="radio2">
+								<label for="radio2">Загрузить изображение</label>
+							</div>
+						</div>
+					</div>
+					<div class="decor__img">
+						<div class="decor__size-x">
+							Макс  300 см
+						</div>
+						<div class="decor__size-y">
+							Макс  200 см
+						</div>
+						<img src="images/decor.jpg" alt="">
+					</div>
+					<div class="decor__img-var clearfix">
+						<div class="decor__img-total">
+							<span class="calc__step-title">Изображение 4235</span>
+						</div>
+						<a href="#" class="choice__link">Выбрать другое</a>
+					</div>
+				</div>
+				<div class="decor__step with-bg">
+					<div class="calc__step-block">
+						<div>
+							<span class="calc__step-number">
+								2
+							</span>
+							<span class="calc__step-title">Тип модуля фотопанно</span>
+						</div>
+					</div>
+				</div>
+				<div class="p-module__carousel">
+					<div id="project-thumb" class="owl-carousel owl-theme">
+					  <div class="item">
+					  	<a href="">
+					  		<div class="p-module__item">
+					  			<div class="table-block">
+					  				<div class="block-vertical">
+					  					<img src="images/module.png" alt="">
+					  					<p>№1</p>
+					  				</div>
+					  			</div>
+					  		</div>
+					  	</a>
+					  </div>
+					  <div class="item">
+					  	<a href="">
+					  		<div class="p-module__item">
+					  			<div class="table-block">
+					  				<div class="block-vertical">
+					  					<img src="images/module.png" alt="">
+					  					<p>№2</p>
+					  				</div>
+					  			</div>
+					  		</div>
+					  	</a>
+					  </div>
+					  <div class="item">
+					  	<a href="" class="active">
+					  		<div class="p-module__item">
+					  			<div class="table-block">
+					  				<div class="block-vertical">
+					  					<img src="images/module.png" alt="">
+					  					<p>№3</p>
+					  				</div>
+					  			</div>
+					  		</div>
+					  	</a>
+					  </div>
+					  <div class="item">
+					  	<a href="">
+					  		<div class="p-module__item">
+					  			<div class="table-block">
+					  				<div class="block-vertical">
+					  					<img src="images/module.png" alt="">
+					  					<p>№4</p>
+					  				</div>
+					  			</div>
+					  		</div>
+					  	</a>
+					  </div>
+					  <div class="item">
+					  	<a href="">
+					  		<div class="p-module__item">
+					  			<div class="table-block">
+					  				<div class="block-vertical">
+					  					<img src="images/module.png" alt="">
+					  					<p>№5</p>
+					  				</div>
+					  			</div>
+					  		</div>
+					  	</a>
+					  </div>
+					  <div class="item">
+					  	<a href="">
+					  		<div class="p-module__item">
+					  			<div class="table-block">
+					  				<div class="block-vertical">
+					  					<img src="images/module.png" alt="">
+					  					<p>№6</p>
+					  				</div>
+					  			</div>
+					  		</div>
+					  	</a>
+					  </div>
+					  <div class="item">
+					  	<a href="">
+					  		<div class="p-module__item">
+					  			<div class="table-block">
+					  				<div class="block-vertical">
+					  					<img src="images/module.png" alt="">
+					  					<p>№7</p>
+					  				</div>
+					  			</div>
+					  		</div>
+					  	</a>
+					  </div>
+					  <div class="item">
+					  	<a href="">
+					  		<div class="p-module__item">
+					  			<div class="table-block">
+					  				<div class="block-vertical">
+					  					<img src="images/module.png" alt="">
+					  					<p>№8</p>
+					  				</div>
+					  			</div>
+					  		</div>
+					  	</a>
+					  </div>
+					  <div class="item">
+					  	<a href="">
+					  		<div class="p-module__item">
+					  			<div class="table-block">
+					  				<div class="block-vertical">
+					  					<img src="images/module.png" alt="">
+					  					<p>№9</p>
+					  				</div>
+					  			</div>
+					  		</div>
+					  	</a>
+					  </div>
+					  <div class="item">
+					  	<a href="">
+					  		<div class="p-module__item">
+					  			<div class="table-block">
+					  				<div class="block-vertical">
+					  					<img src="images/module.png" alt="">
+					  					<p>№10</p>
+					  				</div>
+					  			</div>
+					  		</div>
+					  	</a>
+					  </div>
+					</div>
+					<div class="customNavigation">
+					  <a class="btn prev">
+					  	<div class="table-block">
+					  		<div class="block-vertical">
+					  			<img src="images/calc-prev.png" alt="">
+					  		</div>
+					  	</div>
+					  </a>
+					  <a class="btn next">
+					  	<div class="table-block">
+					  		<div class="block-vertical">
+					  			<img src="images/calc-next.png" alt="">
+					  		</div>
+					  	</div>
+					  </a>
+					</div>
+				</div>
+				<div class="decor__step with-bg clearfix">
+					<div class="col-md-4">
+						<div class="row">
+							<div class="calc__step-block">
+								<div>
+									<span class="calc__step-number">
+										3
+									</span>
+									<span class="calc__step-title">Общий<br>размер фотопанно</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="calc__size">
+							<div class="calc__size-top">
+								<span class="calc__title">
+									Длина(L)
+								</span>
+								<span class="calc__title">
+									Высота(H)
+								</span>
+							</div>
+							<div class="calc__size-bottom">
+								<input type="text" class="order__input">
+								<span class="calc__size-label">X</span>
+								<input type="text" class="order__input">
+								<span class="calc__size-label">см</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="calc__text">
+							Указывайте  только общий <br>размер фотопанно.
+						</div>
+					</div>
+				</div>
+				<div class="decor__step with-bg clearfix">
+					<div class="col-md-4">
+						<div class="row">
+							<div class="calc__step-block">
+								<div>
+									<span class="calc__step-number">
+										4
+									</span>
+									<span class="calc__step-title">Выберите<br> Стекло</span>
+								</div>
+								<div class="calc__help">
+									<a href="#">
+										<img src="images/info.png" alt="">
+										Помощь
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="calc__check">
+							<input type="radio" name="radio2" class="checkbox" id="radio3">
+							<label for="radio3">Закаленное стекло <br><span class="orange">Optiwhite™</span> 5 мм</label>
+						</div>
+						<div class="calc__text">
+							Дополнительно отбеленное и очищенное стекло. Высокая цветопередача и яркость.  В отличии от обычного стекла не имеет специфического зеленоватого оттенка.
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="calc__check">
+							<input type="radio" name="radio2" class="checkbox" id="radio4">
+							<label for="radio4">Закаленное стекло <br> Стандарт 5 мм</label>
+						</div>
+						<div class="calc__text">
+							Сырьевое стекло, из которого производится практически вся стекольная продукция.
+						</div>
+					</div>
+				</div>
+				<div class="decor__step with-bg clearfix">
+					<div class="col-md-4">
+						<div class="row">
+							<div class="calc__step-block">
+								<div>
+									<span class="calc__step-number">
+										5
+									</span>
+									<span class="calc__step-title">Доставка</span>
+								</div>
+								<div class="calc__help">
+									<a href="#">
+										<img src="images/info.png" alt="">
+										Помощь
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-8">
+						<div class="row">
+							<div class="decor__city clearfix">
+								<div class="col-md-6">
+									<div class="calc__title">
+										Выберите свой город
+									</div>
+									<div class="calc__select">
+										<input type="text" class="order__input">
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="calc__text padding">
+										Если вашего города нет в списке, уточните стоимость доставки у оператора.
+									</div>
+								</div>
+							</div>
+							<div class="decor__adress clearfix">
+								<div class="col-xs-12">
+									<div class="calc__title">
+										Адрес доставки
+									</div>
+									<div class="calc__select">
+										<input type="text" class="order__input">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="decor__step with-bg clearfix">
+					<div class="col-md-4">
+						<div class="row">
+							<div class="calc__step-block">
+								<div>
+									<span class="calc__step-number">
+										6
+									</span>
+									<span class="calc__step-title">Ваши <br>данные</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-8">
+						<div class="row">
+							<div class="decor__adress clearfix">
+								<div class="col-xs-12">
+									<div class="calc__title">
+										Фамилия Имя Отчество
+									</div>
+									<div class="calc__select">
+										<input type="text" class="order__input">
+									</div>
+								</div>
+							</div>
+							<div class="decor__contacts clearfix">
+								<div class="col-sm-6">
+									<div class="decor__contacts-item">
+										<div class="calc__title">
+											Телефон
+										</div>
+										<input type="text" class="order__input">
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="decor__contacts-item">
+										<div class="calc__title">
+											E-mail
+										</div>
+										<input type="text" class="order__input">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- content -->
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close__modal" data-dismiss="modal" aria-label="Close">
+        	<img src="images/close-modal.png" alt="">
+        </button>
+        <h4 class="modal-title">Вход на сайт</h4>
+      </div>
+      <div class="modal-body">
+        <div class="modal-input-block clearfix">
+        	<div class="col-xs-5">
+        		<div class="row">
+        			<div class="modal-input__label">
+        				<div class="table-block">
+        					<div class="block-vertical">Логин (Ваш E-mail)</div>
+        				</div>
+        			</div>	
+        		</div>
+        	</div>
+        	<div class="col-xs-7">
+        		<div class="row">
+        			<input type="text" class="modal__input">
+        		</div>
+        	</div>
+        </div>
+        <div class="modal-input-block clearfix">
+        	<div class="col-xs-5">
+        		<div class="row">
+        			<div class="modal-input__label">
+        				<div class="table-block">
+        					<div class="block-vertical">Пароль</div>
+        				</div>
+        			</div>	
+        		</div>
+        	</div>
+        	<div class="col-xs-7">
+        		<div class="row">
+        			<input type="password" class="modal__input">
+        		</div>
+        	</div>
+        </div>
+        <div class="modal-input-block clearfix">
+        	<div class="col-xs-5">
+        		<div class="row">	
+        		</div>
+        	</div>
+        	<div class="col-xs-7">
+        		<div class="row">
+        			<div class="modal__check clearfix">
+        				<div class="modal__check-item">
+        					<input type="checkbox" class="check" id="m-check1">
+        					<label for="m-check1">Запомнить меня</label>
+        				</div>
+        				<a href="#" class="modal__link password__forget">Забыли пароль?</a>
+        			</div>
+        		</div>
+        	</div>
+        </div>
+        <div class="modal-input-block pad clearfix">
+        	<div class="col-xs-5">
+        		<div class="row">
+        			<div class="modal-input__label">
+        				<div class="table-block">
+        					<div class="block-vertical">
+        						<a href="#" class="modal__link">Зарегестрироваться</a>
+        					</div>
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        	<div class="col-xs-7">
+        		<div class="row">
+        			<input type="submit" value="Войти в аккаунт" class="modal__submit">
+        		</div>
+        	</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+	<script src="js/vendor.min.js"></script>
+	<script>
+		$(document).ready(function() {
+
+		  var owl = $("#project-thumb");
+		 
+		  owl.owlCarousel({
+		      items : 8,
+		      itemsDesktop : [1300,7],
+		      itemsDesktopSmall : [1100,6],
+		      itemsTablet: [800,4],
+		      itemsMobile : [400,3]
+		  });
+	 
+		  $(".next").click(function(){
+		    owl.trigger('owl.next');
+		  })
+		  $(".prev").click(function(){
+		    owl.trigger('owl.prev');
+		  })
+		});
+	</script>
+</body>
+</html>

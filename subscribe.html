@@ -72,7 +72,7 @@
 			<div class="enter__link">
 				<div class="table-block">
 					<div class="block-vertical">
-						<a href="#" class="enter__link-label">
+						<a class="enter__link-label" data-toggle="modal" data-target="#myModal">
 							Вход
 						</a>
 					</div>
@@ -429,6 +429,89 @@
 			</div>
 		</div>
 	</footer>
+
+		<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close__modal" data-dismiss="modal" aria-label="Close">
+        	<img src="images/close-modal.png" alt="">
+        </button>
+        <h4 class="modal-title">Вход на сайт</h4>
+      </div>
+      <div class="modal-body">
+        <div class="modal-input-block clearfix">
+        	<div class="col-xs-5">
+        		<div class="row">
+        			<div class="modal-input__label">
+        				<div class="table-block">
+        					<div class="block-vertical">Логин (Ваш E-mail)</div>
+        				</div>
+        			</div>	
+        		</div>
+        	</div>
+        	<div class="col-xs-7">
+        		<div class="row">
+        			<input type="text" class="modal__input">
+        		</div>
+        	</div>
+        </div>
+        <div class="modal-input-block clearfix">
+        	<div class="col-xs-5">
+        		<div class="row">
+        			<div class="modal-input__label">
+        				<div class="table-block">
+        					<div class="block-vertical">Пароль</div>
+        				</div>
+        			</div>	
+        		</div>
+        	</div>
+        	<div class="col-xs-7">
+        		<div class="row">
+        			<input type="password" class="modal__input">
+        		</div>
+        	</div>
+        </div>
+        <div class="modal-input-block clearfix">
+        	<div class="col-xs-5">
+        		<div class="row">	
+        		</div>
+        	</div>
+        	<div class="col-xs-7">
+        		<div class="row">
+        			<div class="modal__check clearfix">
+        				<div class="modal__check-item">
+        					<input type="checkbox" class="check" id="m-check1">
+        					<label for="m-check1">Запомнить меня</label>
+        				</div>
+        				<a href="#" class="modal__link password__forget">Забыли пароль?</a>
+        			</div>
+        		</div>
+        	</div>
+        </div>
+        <div class="modal-input-block pad clearfix">
+        	<div class="col-xs-5">
+        		<div class="row">
+        			<div class="modal-input__label">
+        				<div class="table-block">
+        					<div class="block-vertical">
+        						<a href="#" class="modal__link">Зарегестрироваться</a>
+        					</div>
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        	<div class="col-xs-7">
+        		<div class="row">
+        			<input type="submit" value="Войти в аккаунт" class="modal__submit">
+        		</div>
+        	</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 	<script src="js/vendor.min.js"></script>

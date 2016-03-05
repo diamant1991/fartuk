@@ -950,8 +950,6 @@ ul.bxslider {
   right: 5%;
   background: url(../images/slider-next.png)no-repeat;
 }
-
-
 .bx-wrapper .bx-controls-direction a {
   position: absolute;
   top: 50%;
@@ -960,7 +958,7 @@ ul.bxslider {
   width: 22px;
   height: 47px;
   text-indent: -9999px;
-  z-index: 9999;
+  z-index: 999;
 }
 .bx-wrapper .bx-controls-direction a.disabled {
   display: none;
