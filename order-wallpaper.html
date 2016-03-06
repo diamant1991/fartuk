@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>image catalog</title>
+	<title>order wallpaper</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="keywords" content="" >
 	<meta name="description" content="">
@@ -197,174 +197,272 @@
 	</nav>
 	<!-- nav -->
 
-	<div class="inner-title" style="background-image: url(images/inner-title3.jpg)">
-		<div class="container">
-			<div class="inner-title__img">
-				<div class="table-block">
-					<div class="block-vertical">
-						<div class="inner-search">
-							<div class="inner-search__item">
-								<input type="text" placeholder="Поиск изображений" class="inner-search__input">
-								<div class="select">
-									<a href="javascript:void(0);" class="slct">Для всех продуктов</a>
-									<ul class="drop">
-										<li>Select 1</li>
-										<li>Select 2</li>
-										<li>Select 3</li>
-										<li>Select 4</li>
-									</ul>
-									<input type="hidden" id="select">
+	<div class="content">
+		<div class="container small-container">
+			<div class="item__title">Оформление заказа на фотообои</div>
+			<div class="decor-wrapp">
+				<div class="decor__step">
+					<div class="decor__step-item clearfix">
+						<div class="col-md-4">
+							<div class="row">
+								<div class="calc__step-block">
+									<div>
+										<span class="calc__step-number">
+											1
+										</span>
+										<span class="calc__step-title">Выберите<br>изображение</span>
+									</div>
+									<div class="calc__help">
+										<a href="#">
+											<img src="images/info.png" alt="">
+											Помощь
+										</a>
+									</div>
 								</div>
 							</div>
-							<div class="inner-search__btn">
-								<a href="#" class="item__link">Найти</a>
+						</div>
+						<div class="col-md-4">
+							<div class="calc__check">
+								<input type="radio" name="radio" class="checkbox" id="radio">
+								<label for="radio">Изображение из каталога</label>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="calc__check">
+								<input type="radio" name="radio" class="checkbox" id="radio2">
+								<label for="radio2">Загрузить изображение</label>
+							</div>
+						</div>
+					</div>
+					<div class="decor__img">
+						<div class="decor__size-x">
+							Макс  300 см
+						</div>
+						<div class="decor__size-y">
+							Макс  200 см
+						</div>
+						<img src="images/decor.jpg" alt="">
+					</div>
+					<div class="decor__img-var clearfix">
+						<div class="decor__img-total">
+							<span class="calc__step-title">Изображение 4235</span>
+						</div>
+						<a href="#" class="choice__link">Выбрать другое</a>
+					</div>
+				</div>
+				<div class="decor__step with-bg clearfix">
+					<div class="col-md-4">
+						<div class="row">
+							<div class="calc__step-block">
+								<div>
+									<span class="calc__step-number">
+										2
+									</span>
+									<div class="calc__step-title">
+										<p>Выберите текстуру</p>
+										<p class="p__title">Текстура: живопись с маслом</p>
+										<b>1 300 <span class="rub">c</span> / м<sup>2</sup></b>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-8">
+						<div class="calc__carousel">
+							<div id="calc__carousel" class="owl-carousel owl-theme">
+							  <div class="item">
+							  	<img src="http://placehold.it/85x80" alt="">
+							  </div>
+							  <div class="item">
+							  	<img src="http://placehold.it/85x80" alt="">
+							  </div>
+							  <div class="item active">
+							  	<img src="http://placehold.it/85x80" alt="">
+							  </div>
+							  <div class="item">
+							  	<img src="http://placehold.it/85x80" alt="">
+							  </div>
+							  <div class="item">
+							  	<img src="http://placehold.it/85x80" alt="">
+							  </div>
+							  <div class="item">
+							  	<img src="http://placehold.it/85x80" alt="">
+							  </div>
+							  <div class="item">
+							  	<img src="http://placehold.it/85x80" alt="">
+							  </div>
+							</div>
+							<div class="customNavigation">
+							  <a class="btn prev">
+							  	<img src="images/calc-prev.png" alt="">
+							  </a>
+							  <a class="btn next">
+							  	<img src="images/calc-next.png" alt="">
+							  </a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="decor__step with-bg clearfix">
+					<div class="col-md-4">
+						<div class="row">
+							<div class="calc__step-block">
+								<div>
+									<span class="calc__step-number">
+										3
+									</span>
+									<span class="calc__step-title">Общий размер<br>фотообоев</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="calc__size">
+							<div class="calc__size-top">
+								<span class="calc__title">
+									Длина(L)
+								</span>
+								<span class="calc__title">
+									Высота(H)
+								</span>
+							</div>
+							<div class="calc__size-bottom">
+								<input type="text" class="order__input">
+								<span class="calc__size-label">X</span>
+								<input type="text" class="order__input">
+								<span class="calc__size-label">см</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="calc__title">
+							Количество полотен
+						</div>
+						<div class="calc__quantity">
+							<input type="text" class="quantity__input" value="4">
+							<div class="calc__text">
+								Рассчитывается <br>автоматически
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="decor__step with-bg clearfix">
+					<div class="col-md-4">
+						<div class="row">
+							<div class="calc__step-block">
+								<div>
+									<span class="calc__step-number">
+										4
+									</span>
+									<span class="calc__step-title">Доставка</span>
+								</div>
+								<div class="calc__help">
+									<a href="#">
+										<img src="images/info.png" alt="">
+										Помощь
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-8">
+						<div class="row">
+							<div class="decor__city clearfix">
+								<div class="col-md-6">
+									<div class="calc__title">
+										Выберите свой город
+									</div>
+									<div class="calc__select">
+										<input type="text" class="order__input">
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="calc__text padding">
+										Если вашего города нет в списке, уточните стоимость доставки у оператора.
+									</div>
+								</div>
+							</div>
+							<div class="decor__adress clearfix">
+								<div class="col-xs-12">
+									<div class="calc__title">
+										Адрес доставки
+									</div>
+									<div class="calc__select">
+										<input type="text" class="order__input">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="decor__step with-bg clearfix">
+					<div class="col-md-4">
+						<div class="row">
+							<div class="calc__step-block">
+								<div>
+									<span class="calc__step-number">
+										5
+									</span>
+									<span class="calc__step-title">Ваши <br>данные</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-8">
+						<div class="row">
+							<div class="decor__adress clearfix">
+								<div class="col-xs-12">
+									<div class="calc__title">
+										Фамилия Имя Отчество
+									</div>
+									<div class="calc__select">
+										<input type="text" class="order__input">
+									</div>
+								</div>
+							</div>
+							<div class="decor__contacts clearfix">
+								<div class="col-sm-6">
+									<div class="decor__contacts-item">
+										<div class="calc__title">
+											Телефон
+										</div>
+										<input type="text" class="order__input">
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="decor__contacts-item">
+										<div class="calc__title">
+											E-mail
+										</div>
+										<input type="text" class="order__input">
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</div>
-	<!-- inner-title -->
-	
-	<div class="category-filter">
-		<div class="container middle-container">
-			<div class="category-filter-wrapp clearfix">
-				<div class="category-filter__text">
-					Поиск <br>по категориям
-				</div>
-				<div class="category-filter__item">
-					<ul>
-						<li><a href="#">Абстрактные изображения</a></li>
-						<li><a href="#">Бизнес / финансы</a></li>
-						<li><a href="#">Векторные изображения</a></li>
-						<li><a href="#">Винтаж</a></li>
-						<li><a href="#">Еда и напитки</a></li>
-					</ul>
-				</div>
-				<div class="category-filter__item">
-					<ul>
-						<li><a href="#">Животные/дикая природа</a></li>
-						<li><a href="#">Здания/ Достопримечательности</a></li>
-						<li><a href="#">Знаки/Символы</a></li>
-						<li><a href="#">Знаменитости</a></li>
-						<li><a href="#">Иллюстрации/ Клип-арт</a></li>
-					</ul>
-				</div>
-				<div class="category-filter__item">
-					<ul>
-						<li><a href="#">Интерьеры</a></li>
-						<li><a href="#">Искусство</a></li>
-						<li><a href="#">Красота/мода</a></li>
-						<li><a href="#">Лицензия Editorial</a></li>
-						<li><a href="#">Люди</a></li>
-					</ul>
-				</div>
-				<div class="category-filter__item">
-					<ul>
-						<li><a href="#">Парки / Природа</a></li>
-						<li><a href="#">Природа</a></li>
-						<li><a href="#">Спорт / Отдых</a></li>
-						<li><a href="#">Еда / Напитки</a></li>
-						<li><a href="#">Фоны/текстуры</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- category-filter -->
-
-	<div class="popular-image">
-		<div class="container middle-container">
-			<div class="popular-image__header clearfix">
-				<div class="item__title">Популярные изображения</div>
-				<div class="popular-image__display">
-					<a href="#" class="p-image__icon small"></a>
-					<a href="#" class="p-image__icon middle active"></a>
-					<a href="#" class="p-image__icon large"></a>
-				</div>
-			</div>
-			<div class="popular-image__list clearfix">
-				<div class="col-md-4">
-					<div class="row">
-						<div class="popular-image__item">
-							<img src="images/popular-image.jpg" alt="">
+			<div class="after-decor clearfix">
+				<div class="decor__total">
+					<div class="decor__total-block clearfix">
+						<div class="decor__total-price">
+							<p>Общая стоимость</p>
+							<div class="total-price__item">
+								7 500 <span class="rub">c</span>
+							</div>
+						</div>
+						<div class="decor__total-link">
+							<a href="#">Подтвердить заказ</a>
 						</div>
 					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="row">
-						<div class="popular-image__item">
-							<img src="images/popular-image.jpg" alt="">
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="row">
-						<div class="popular-image__item">
-							<img src="images/popular-image.jpg" alt="">
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="row">
-						<div class="popular-image__item">
-							<img src="images/popular-image.jpg" alt="">
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="row">
-						<div class="popular-image__item">
-							<img src="images/popular-image.jpg" alt="">
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="row">
-						<div class="popular-image__item">
-							<img src="images/popular-image.jpg" alt="">
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="row">
-						<div class="popular-image__item">
-							<img src="images/popular-image.jpg" alt="">
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="row">
-						<div class="popular-image__item">
-							<img src="images/popular-image.jpg" alt="">
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="row">
-						<div class="popular-image__item">
-							<img src="images/popular-image.jpg" alt="">
-						</div>
+					<div class="decor__total-text">
+						Цена предварительная. Конечная стоимость рассчитывается персонально с менеджером и может отличаться от указанной.  Подъем фартука в домах без лифта оплачивается отдельно. Стоимость подстветки рассчитывается как средняя за 1,5 м.
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-
-	<div class="product-text second">
-		<div class="container middle-container">
-			<div class="product-text__item">
-				<div class="item__title">Каталог изображений</div>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fermentum turpis est, vitae fringilla tortor vestibulum ut. Proin finibus, ligula ultricies bibendum viverra, enim tortor ultricies lacus, non vestibulum nibh arcu a orci. Nam porttitor, sapien eu feugiat sodales, neque sapien elementum erat, non egestas purus lacus eu tortor. Aenean elementum ultricies maximus. Vivamus finibus mollis neque. In hac habitasse platea dictumst. Curabitur dui orci, iaculis sit amet mauris in, ultrices hendrerit lorem.
-				</p>
-				<p>
-					Suspendisse potenti. Vestibulum et aliquet libero. Nulla luctus ex ac tempus ullamcorper. Vestibulum posuere mauris sit amet molestie pulvinar. Nullam dapibus ex risus, ac auctor sem placerat at. Cras luctus id nibh quis pellentesque. Praesent fermentum nulla ac sem accumsan vestibulum. Praesent ac lacinia urna. Maecenas non porttitor nibh, et hendrerit arcu. Proin lacinia hendrerit tortor, congue porttitor ex blandit aliquet. Donec in lorem neque. Praesent et magna ac libero facilisis suscipit vel ac ante. Sed at urna elementum, luctus risus non, sagittis ante. Ut ut mi ex.
-				</p>
-			</div>
-		</div>
-	</div>
+	<!-- content -->
 
 	<footer class="footer">
 		<div class="footer__top">
@@ -519,7 +617,9 @@
 		</div>
 	</footer>
 
-		<!-- Modal -->
+
+
+<!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -603,8 +703,29 @@
 </div>
 
 
-
-
 	<script src="js/vendor.min.js"></script>
+	<script>
+		$(document).ready(function() {
+ 
+	  var owl = $("#calc__carousel");
+	 
+	  owl.owlCarousel({
+	      items : 5, 
+	      itemsDesktop : [1000,4],
+	      itemsDesktopSmall : [900,3], 
+	      itemsTablet: [600,2],
+	      itemsMobile : [450,1]
+	  });
+ 
+	  // Custom Navigation Events
+	  $(".next").click(function(){
+	    owl.trigger('owl.next');
+	  })
+	  $(".prev").click(function(){
+	    owl.trigger('owl.prev');
+	  })
+	 
+	});
+	</script>
 </body>
 </html>
