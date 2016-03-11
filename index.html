@@ -26,7 +26,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="header__contact">
+			<div class="header__contact hidden-xs">
 				<div class="table-block">
 					<div class="block-vertical">
 						<div class="telephone">
@@ -39,7 +39,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="header__contact">
+			<div class="header__contact hidden-xs">
 				<div class="table-block">
 					<div class="block-vertical">
 						<div class="telephone">
@@ -52,6 +52,22 @@
 					</div>
 				</div>
 			</div>
+			<div class="mobile-header__contact visible-xs">
+				<div class="telephone">
+					<span class="telephone__code">8 800</span>
+					<span class="telephone__number">555–55–558</span>
+				</div>
+				<div class="header__time">
+					с 9<sup>00</sup> до 18<sup>00</sup> (пн—пт)
+				</div>
+				<div class="telephone">
+					<span class="telephone__code">8 499</span>
+					<span class="telephone__number">647-77-39</span>
+				</div>
+				<a href="#" class="get-call">
+					Заказать звонок
+				</a>
+			</div>
 			<div class="header__recom">
 				<div class="table-block">
 					<div class="block-vertical">
@@ -61,7 +77,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="catalog__link">
+			<div class="catalog__link hidden-xs">
 				<div class="table-block">
 					<div class="block-vertical">
 						<a href="#" class="catalog__link-label">
@@ -70,7 +86,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="enter__link">
+			<div class="enter__link hidden-xs">
 				<div class="table-block">
 					<div class="block-vertical">
 						<a class="enter__link-label" data-toggle="modal" data-target="#myModal">
@@ -85,7 +101,7 @@
 
 	<nav class="nav">
 		<div class="container">
-			<ul class="catalog-menu">
+			<ul class="catalog-menu hidden-sm">
 				<li class="catalog-menu__item">
 					<a href="#">Каталог продукции</a>
 					<ul class="dropdown-menu clearfix">
@@ -133,7 +149,7 @@
 					</ul>
 				</li>
 			</ul>
-			<ul class="nav-menu clearfix">
+			<ul class="nav-menu hidden-sm clearfix">
 				<li class="nav-menu__item">
 					<a href="#" class="search__btn">
 						<img src="images/search-icon.png" alt="">
@@ -181,6 +197,9 @@
 					</ul>
 				</li>
 			</ul>
+			<a href="#" class="search__btn visible-sm">
+				<img src="images/search-icon.png" alt="">
+			</a>
 			<div class="basket-block">
 				<div class="table-block">
 					<div class="block-vertical">
@@ -192,6 +211,56 @@
 						</a>
 					</div>
 				</div>
+			</div>
+			<div class="enter__link visible-xs">
+				<div class="table-block">
+					<div class="block-vertical">
+						<a class="enter__link-label" data-toggle="modal" data-target="#myModal">
+							Вход
+						</a>
+					</div>
+				</div>
+			</div>
+			<button class="navbar-toggle visible-sm"> 
+        <span class="icon-bar"></span> 
+        <span class="icon-bar"></span> 
+        <span class="icon-bar"></span> 
+      </button>
+		</div>
+		<div class="mobile-nav">
+			<a class="close-menu">
+				<img src="images/close-menu.png" alt="">
+			</a>
+			<div class="mobile-nav-wrapp">
+				<ul>
+					<li>
+						<a href="#">Каталог продукции</a>
+					</li>
+					<li>
+					<a href="#">О компании</a>
+					</li>
+					<li>
+						<a href="#">Проекты</a>
+					</li>
+					<li>
+						<a href="#">Оплата и доставка</a>
+					</li>
+					<li>
+						<a href="#">Монтаж</a>
+					</li>
+					<li>
+						<a href="#">Цены</a>
+					</li>
+					<li>
+						<a href="#">Статьи</a>
+					</li>
+					<li>
+						<a href="#">Контактные данные</a>
+					</li>
+					<li>
+						<a href="#">Еще</a>
+					</li>
+				</ul>
 			</div>
 		</div>
 	</nav>
@@ -319,9 +388,9 @@
 				У нас чаще заказывают эти товары
 			</div>
 			<div class="product-wrapp clearfix">
-				<div class="col-md-8">
+				<div class="col-sm-8 col-xs-6">
 					<div class="row">
-						<div class="col-md-12">
+						<div class="col-xs-12 hidden-xs">
 							<div class="row">
 								<div class="product__item">
 									<a href="#">
@@ -338,7 +407,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-md-6">
+						<div class="col-sm-6 col-xs-12">
 							<div class="row">
 								<div class="product__item">
 									<a href="#">
@@ -355,7 +424,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-md-6">
+						<div class="col-sm-6 col-xs-12">
 							<div class="row">
 								<div class="product__item">
 									<a href="#">
@@ -370,7 +439,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4">
+				<div class="col-sm-4 col-xs-6">
 					<div class="row">
 						<div class="product__item">
 							<a href="#">
@@ -391,6 +460,23 @@
 						</div>
 					</div>
 				</div>
+				<div class="col-xs-6 visible-xs">
+					<div class="row">
+						<div class="product__item">
+							<a href="#">
+								<div class="product__item-inner" style="background-image: url(images/product1.jpg)">
+									<div class="product__name">
+										Фартух для кухни
+									</div>
+									<div class="product__price">
+										от 4 500
+										<span class="rub">c</span>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -398,7 +484,7 @@
 
 	<div class="advantages">
 		<div class="container small-container">
-			<div class="col-md-4">
+			<div class="col-sm-4">
 				<div class="advantages__item">
 					<div class="advantages__icon">
 						<img src="images/adv1.png" alt="">
@@ -413,7 +499,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-md-4">
+			<div class="col-sm-4">
 				<div class="advantages__item">
 					<div class="advantages__icon">
 						<img src="images/adv2.png" alt="">
@@ -428,7 +514,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-md-4">
+			<div class="col-sm-4">
 				<div class="advantages__item">
 					<div class="advantages__icon">
 						<img src="images/adv3.png" alt="">
@@ -502,7 +588,7 @@
 	<div class="text-block">
 		<div class="container small-container">
 			<div class="text-block__item clearfix">
-				<div class="col-md-8">
+				<div class="col-md-8 col-sm-7">
 					<div class="row">
 						<div class="text-block__info">
 							<div class="table-block">
@@ -524,7 +610,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-4 col-sm-5 hidden-xs">
 					<div class="row">
 						<div class="text-block__baner">
 							<img src="images/text-banner.jpg" alt="">
@@ -533,7 +619,7 @@
 				</div>
 			</div>
 			<div class="features clearfix">
-				<div class="col-md-3">
+				<div class="col-sm-3">
 					<div class="features__item">
 						<div class="features__title">
 							<span class="features__icon">
@@ -548,7 +634,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-3">
+				<div class="col-sm-3">
 					<div class="features__item">
 						<div class="features__title">
 							<span class="features__icon">
@@ -563,7 +649,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-3">
+				<div class="col-sm-3">
 					<div class="features__item">
 						<div class="features__title">
 							<span class="features__icon">
@@ -578,7 +664,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-3">
+				<div class="col-sm-3">
 					<div class="features__item">
 						<div class="features__title">
 							<span class="features__icon">
@@ -604,7 +690,7 @@
 				<div class="item__title">Выполненные проекты</div>
 				<div class="small-item__title">Создаем уют т вдохновляем вас</div>
 				<div class="complete__list clearfix">
-					<div class="col-md-4">
+					<div class="col-sm-4">
 						<div class="row">
 							<div class="complete__item">
 								<div class="complete__item-inner">
@@ -628,7 +714,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4">
+					<div class="col-sm-4">
 						<div class="row">
 							<div class="complete__item">
 								<div class="complete__item-inner">
@@ -652,7 +738,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4">
+					<div class="col-sm-4">
 						<div class="row">
 							<div class="complete__item">
 								<div class="complete__item-inner">
@@ -726,7 +812,7 @@
 				</a>
 			</div>
 			<div class="article-wrapp clearfix">
-				<div class="col-md-3">
+				<div class="col-md-3 col-xs-6">
 					<div class="row">
 						<div class="article__item">
 							<div class="article__item-inner">
@@ -749,7 +835,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-3 col-xs-6">
 					<div class="row">
 						<div class="article__item">
 							<div class="article__item-inner">
@@ -772,7 +858,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-3 col-xs-6">
 					<div class="row">
 						<div class="article__item">
 							<div class="article__block-img" style="background-image: url(images/article-block.jpg)">
@@ -794,7 +880,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-3 col-xs-6">
 					<div class="row">
 						<div class="article__item">
 							<div class="article__item-inner">
@@ -835,7 +921,7 @@
 	<div class="sequence">
 		<div class="container small-container">
 			<div class="sequence-wrapp clearfix">
-				<div class="col-md-4">
+				<div class="col-xs-4">
 					<div class="row">
 						<div class="sequence__item">
 							<div class="sequence__icon">
@@ -850,7 +936,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4">
+				<div class="col-xs-4">
 					<div class="row">
 						<div class="sequence__item">
 							<div class="sequence__icon">
@@ -865,7 +951,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4">
+				<div class="col-xs-4">
 					<div class="row">
 						<div class="sequence__item">
 							<div class="sequence__icon">
@@ -880,7 +966,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4">
+				<div class="col-xs-4">
 					<div class="row">
 						<div class="sequence__item">
 							<div class="sequence__icon">
@@ -892,7 +978,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4">
+				<div class="col-xs-4">
 					<div class="row">
 						<div class="sequence__item">
 							<div class="sequence__icon">
@@ -907,7 +993,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4">
+				<div class="col-xs-4">
 					<div class="row">
 						<div class="sequence__item">
 							<div class="sequence__icon">
@@ -930,13 +1016,13 @@
 	<div class="text-block">
 		<div class="container">
 			<div class="text-block__item text-block__item_pad clearfix">
-				<div class="col-md-5">
+				<div class="col-sm-5">
 					<div class="row">
 						<div class="text-block__baner" style="background-image: url(images/text-banner2.jpg)">
 						</div>
 					</div>
 				</div>
-				<div class="col-md-7">
+				<div class="col-sm-7">
 					<div class="row">
 						<div class="text-block__info">
 							<div class="table-block">
@@ -966,7 +1052,7 @@
 		<div class="footer__top">
 			<div class="container">
 				<div class="footer-wrapp clearfix">
-					<div class="col-md-2">
+					<div class="col-md-2 col-sm-3 col-xs-6">
 						<div class="row">
 							<ul class="footer__list">
 								<li>
@@ -1001,7 +1087,7 @@
 							</ul>
 						</div>
 					</div>
-					<div class="col-md-2">
+					<div class="col-md-2 col-sm-3 col-xs-6">
 						<div class="row">
 							<ul class="footer__list">
 								<li>
@@ -1033,7 +1119,7 @@
 							</ul>
 						</div>
 					</div>
-					<div class="col-md-8">
+					<div class="col-md-8 col-sm-6 col-xs-12">
 						<div class="row">
 							<div class="footer__title">
 								Pro Fartuk
@@ -1052,7 +1138,7 @@
 		</div>
 		<div class="footer__bottom clearfix">
 			<div class="container">
-				<div class="col-md-3">
+				<div class="col-lg-3 col-md-3">
 					<div class="row">
 						<div class="social__item">
 							<div class="table-block">
@@ -1084,7 +1170,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-6">
+				<div class="col-lg-6 col-md-9">
 					<div class="row">
 						<div class="widget">
 							<div class="table-block">
@@ -1095,7 +1181,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-3">
+				<div class="col-lg-3 col-md-12">
 					<div class="row">
 						<div class="footer__design">
 							<div class="table-block">
@@ -1114,6 +1200,7 @@
 			</div>
 		</div>
 	</footer>
+
 
 	<!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
@@ -1211,10 +1298,10 @@
  
   owl.owlCarousel({
       items : 6,
-      itemsDesktop : [1200,6],
-      itemsDesktopSmall : [1000,5],
-      itemsTablet: [800,4],
-      itemsMobile : [450,3]
+      itemsDesktop : [1200,5],
+      itemsDesktopSmall : [991,4],
+      itemsTablet: [600,3],
+      itemsMobile : [450,2]
   });
  
 	  // Custom Navigation Events
@@ -1227,5 +1314,6 @@
  
 });
 	</script>
+	<script src="js/main.js"></script>
 </body>
 </html>

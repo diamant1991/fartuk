@@ -26,7 +26,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="header__contact">
+			<div class="header__contact hidden-xs">
 				<div class="table-block">
 					<div class="block-vertical">
 						<div class="telephone">
@@ -39,7 +39,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="header__contact">
+			<div class="header__contact hidden-xs">
 				<div class="table-block">
 					<div class="block-vertical">
 						<div class="telephone">
@@ -52,6 +52,22 @@
 					</div>
 				</div>
 			</div>
+			<div class="mobile-header__contact visible-xs">
+				<div class="telephone">
+					<span class="telephone__code">8 800</span>
+					<span class="telephone__number">555–55–558</span>
+				</div>
+				<div class="header__time">
+					с 9<sup>00</sup> до 18<sup>00</sup> (пн—пт)
+				</div>
+				<div class="telephone">
+					<span class="telephone__code">8 499</span>
+					<span class="telephone__number">647-77-39</span>
+				</div>
+				<a href="#" class="get-call">
+					Заказать звонок
+				</a>
+			</div>
 			<div class="header__recom">
 				<div class="table-block">
 					<div class="block-vertical">
@@ -61,7 +77,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="catalog__link">
+			<div class="catalog__link hidden-xs">
 				<div class="table-block">
 					<div class="block-vertical">
 						<a href="#" class="catalog__link-label">
@@ -70,7 +86,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="enter__link">
+			<div class="enter__link hidden-xs">
 				<div class="table-block">
 					<div class="block-vertical">
 						<a class="enter__link-label" data-toggle="modal" data-target="#myModal">
@@ -85,7 +101,7 @@
 
 	<nav class="nav">
 		<div class="container">
-			<ul class="catalog-menu">
+			<ul class="catalog-menu hidden-sm">
 				<li class="catalog-menu__item">
 					<a href="#">Каталог продукции</a>
 					<ul class="dropdown-menu clearfix">
@@ -133,7 +149,7 @@
 					</ul>
 				</li>
 			</ul>
-			<ul class="nav-menu clearfix">
+			<ul class="nav-menu hidden-sm clearfix">
 				<li class="nav-menu__item">
 					<a href="#" class="search__btn">
 						<img src="images/search-icon.png" alt="">
@@ -181,6 +197,9 @@
 					</ul>
 				</li>
 			</ul>
+			<a href="#" class="search__btn visible-sm">
+				<img src="images/search-icon.png" alt="">
+			</a>
 			<div class="basket-block">
 				<div class="table-block">
 					<div class="block-vertical">
@@ -192,6 +211,56 @@
 						</a>
 					</div>
 				</div>
+			</div>
+			<div class="enter__link visible-xs">
+				<div class="table-block">
+					<div class="block-vertical">
+						<a class="enter__link-label" data-toggle="modal" data-target="#myModal">
+							Вход
+						</a>
+					</div>
+				</div>
+			</div>
+			<button class="navbar-toggle visible-sm"> 
+        <span class="icon-bar"></span> 
+        <span class="icon-bar"></span> 
+        <span class="icon-bar"></span> 
+      </button>
+		</div>
+		<div class="mobile-nav">
+			<a class="close-menu">
+				<img src="images/close-menu.png" alt="">
+			</a>
+			<div class="mobile-nav-wrapp">
+				<ul>
+					<li>
+						<a href="#">Каталог продукции</a>
+					</li>
+					<li>
+					<a href="#">О компании</a>
+					</li>
+					<li>
+						<a href="#">Проекты</a>
+					</li>
+					<li>
+						<a href="#">Оплата и доставка</a>
+					</li>
+					<li>
+						<a href="#">Монтаж</a>
+					</li>
+					<li>
+						<a href="#">Цены</a>
+					</li>
+					<li>
+						<a href="#">Статьи</a>
+					</li>
+					<li>
+						<a href="#">Контактные данные</a>
+					</li>
+					<li>
+						<a href="#">Еще</a>
+					</li>
+				</ul>
 			</div>
 		</div>
 	</nav>
@@ -233,7 +302,7 @@
 			<div class="item__title new_item__title">ВИЛЬБО — подвесной светильник с 3 лампами</div>
 			<div class="content-wrapp">
 				<div class="card-wrapper clearfix">
-					<div class="col-md-9">
+					<div class="col-md-9 col-sm-8">
 						<div class="row">
 							<div class="card__item">
 								<div class="card__item-inner">
@@ -301,7 +370,213 @@
 												</div>
 											</div>
 										</div>
+										<div class="col-md-8">
+											<div class="row">
+												<div class="card__descr">
+													<div class="card__descr-item clearfix">
+														<div class="col-xs-4">
+															<div class="row">
+																<div class="list__price-block">
+																	<div class="prev-price">
+																		<span class="prev-price__sale">-7%</span>
+																		<span class="prev-price__info">
+																			60 000 <span class="rub">c</span>
+																		</span>
+																	</div>
+																	<div class="today-price">
+																		57 800 <span class="rub">c</span>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="col-xs-4">
+															<div class="row">
+																<div class="card__star">
+																	<span>
+																		<img src="images/star.png" alt="">
+																	</span>
+																	<span>
+																		(24)
+																	</span>
+																</div>
+															</div>
+														</div>
+														<div class="col-xs-4">
+															<div class="row">
+																<div class="card__status">
+																	<span class="card-in-stock">Товар в наличии</span>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="card__descr-item">
+														<div class="card__delivery clearfix">
+															<ul clearfix>
+																<li class="clearfix">
+																	<div class="left-block">
+																		<p class="blue-text">Доставка курьером</p>
+																		<p>по Москве, бесплатно</p>
+																	</div>
+																	<div class="right-block">
+																		<p><b>завтра</b></p>
+																		<p>и позже</p>
+																	</div>
+																</li>
+																<li class="clearfix">
+																	<div class="left-block">
+																		<p class="blue-text">Забрать в магазине</p>
+																		<p>3 магазина, бесплатно</p>
+																	</div>
+																	<div class="right-block">
+																		<p><span class="green-text">сегодня</span> <b>до 18:00</b></p>
+																		<p>и позже</p>
+																	</div>
+																</li>
+															</ul>
+														</div>
+													</div>
+													<div class="card-link clearfix">
+														<a href="#" class="card-link__buy">
+															<span>
+																<img src="images/buy-icon.png" alt="">
+															</span>
+															<span>Купить</span>
+														</a>
+														<a href="#" class="one-step__link">
+															Купить в один клик
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
 									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-4">
+						<div class="row">
+							<div class="official-status">
+								<span>
+									<img src="images/official.png" alt="">
+								</span>
+								<span>Официальная доставка</span>
+							</div>
+							<div class="card-name-info">
+								<div class="card-name-block">
+									<div class="table-block">
+										<div class="block-vertical">
+											<div class="card-name__title">Вильбо</div>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum neque augue, dapibus sit amet dictum nec, vestibulum in metus. Cras vestibulum magna feugiat rutrum condimentum. Nulla id tellus ac magna sodales rutrum. Curabitur facilisis augue vel purus faucibus, quis feugiat urna porttitor.</p>
+											<a href="#">Подробнее</a>
+											<div class="card-name__social">
+												<img src="images/card-name-social.jpg" alt="">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="cat-advantages card_advantages clearfix">
+					<div class="col-md-3 col-sm-6">
+						<div class="row">
+							<div class="cat-advantages__item">
+								<span class="cat-advantages__icon">
+									<img src="images/cat-adv1.png" alt="">
+								</span>
+								<span class="cat-advantages__text">Доставляем товары <br><a href="#">по всей России</a></span>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<div class="row">
+							<div class="cat-advantages__item">
+								<span class="cat-advantages__icon">
+									<img src="images/cat-adv2.png" alt="">
+								</span>
+								<span class="cat-advantages__text">Оплачивайте любым <br>удобным <a href="#">способом</a></span>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<div class="row">
+							<div class="cat-advantages__item">
+								<span class="cat-advantages__icon">
+									<img src="images/cat-adv3.png" alt="">
+								</span>
+								<span class="cat-advantages__text"><a href="#">Возврат или обмен</a> <br>в течении 14 дней</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<div class="row">
+							<div class="cat-advantages__item">
+								<span class="cat-advantages__icon">
+									<img src="images/green-like.png" alt="">
+								</span>
+								<span class="cat-advantages__text"><a href="#">Гарантируем</a> высокое <br> качество продукции</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="about-card">
+			<div class="container small-container clearfix">
+				<div class="item__title new_item__title">О товаре</div>
+				<div class="about-card-wrapp clearfix">
+					<div class="col-md-8">
+						<div class="row">
+							<div class="about-card__text">
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum neque augue, dapibus sit amet dictum nec, vestibulum in metus. Cras vestibulum magna feugiat rutrum condimentum. Nulla id tellus ac magna sodales rutrum. Curabitur facilisis augue vel purus faucibus, quis feugiat urna porttitor. Aenean at nulla eros. Pellentesque sodales ligula velit, at laoreet mauris condimentum non. Praesent et lorem ornare diam mattis consectetur sit amet vitae tortor. 
+								</p>
+								<p>
+									<b>Nulla id tellus ac magna sodales rutrum.</b> Curabitur facilisis augue vel purus faucibus, quis feugiat urna porttitor. Aenean at nulla eros. 
+								</p>
+								<p>
+									Для обычного абажура или светильника используйте матовую лампочку. Это обеспечит равномерный рассеянный свет. IKEA. Модель T1348F ВИЛЛЬБО. 
+								</p>
+								<p>
+									<b>Для этого светильника подходят лампочки класса энергопотребления от A++ до D.</b>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="row">
+							<div class="card-tech">
+								<div class="card-tech__title">
+									Технические характеристики
+								</div>
+								<table class="card-tech__table">
+									<tbody>
+										<tr>
+											<td>Ширина:</td>
+											<td>60 см</td>
+										</tr>
+										<tr>
+											<td>Мин высота:</td>
+											<td>30 см</td>
+										</tr>
+										<tr>
+											<td>Макс высота:</td>
+											<td>130 см</td>
+										</tr>
+										<tr>
+											<td>Диаметр абажура:</td>
+											<td>10 см</td>
+										</tr>
+										<tr>
+											<td>Длина провода:</td>
+											<td>1.8 см</td>
+										</tr>
+									</tbody>
+								</table>
+								<div class="card-tech__text">
+									Требуется самостоятельная сборка
 								</div>
 							</div>
 						</div>
@@ -309,8 +584,513 @@
 				</div>
 			</div>
 		</div>
+		<!-- about card -->
+		<div class="recom-set hidden-sm">
+			<div class="container">
+				<div class="item__title new_item__title">Рекомендуемый комплект</div>
+				<div class="recom-set-wrapp clearfix">
+					<div class="col-sm-3">
+						<div class="row">
+							<div class="recom-set__item">
+								<div class="recom-set__img">
+									<img src="images/recom-set-img.jpg" alt="">
+								</div>
+								<div class="recom-set__desc">
+									<div class="recom-set__name">
+										ВИЛЛЬБО — Подвесной светильник с 3 лампами
+									</div>
+									<div class="recom-set__price clearfix">
+										<div class="list__price-block">
+											<div class="today-price">
+												57 800 <span class="rub">c</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="plus">
+									+
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="row">
+							<div class="recom-set__item">
+								<div class="recom-set__img">
+									<img src="images/recom-set-img.jpg" alt="">
+								</div>
+								<div class="recom-set__desc">
+									<div class="recom-set__name">
+										ВИЛЛЬБО — Подвесной светильник с 3 лампами
+									</div>
+									<div class="recom-set__price clearfix">
+										<div class="list__price-block">
+											<div class="prev-price">
+												<span class="prev-price__sale">-7%</span>
+												<span class="prev-price__info">
+													60 000 <span class="rub">c</span>
+												</span>
+											</div>
+											<div class="today-price">
+												57 800 <span class="rub">c</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="plus">
+									+
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="row">
+							<div class="recom-set__item">
+								<div class="recom-set__img">
+									<img src="images/recom-set-img.jpg" alt="">
+								</div>
+								<div class="recom-set__desc">
+									<div class="recom-set__name">
+										ВИЛЛЬБО — Подвесной светильник с 3 лампами
+									</div>
+									<div class="recom-set__price clearfix">
+										<div class="list__price-block">
+											<div class="today-price">
+												57 800 <span class="rub">c</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="equally">
+									=
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="row">
+							<div class="recom-set__total">
+								<div class="list__price-block">
+									<div class="prev-price">
+										<span class="prev-price__sale">-7%</span>
+										<span class="prev-price__info">
+											60 000 <span class="rub">c</span>
+										</span>
+									</div>
+									<div class="today-price">
+										57 800 <span class="rub">c</span>
+									</div>
+								</div>
+								<a href="#" class="card-link__buy">
+									<span>
+										<img src="images/buy-icon.png" alt="">
+									</span>
+									<span>Купить комплект</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- recom set -->
 	</div>
 
+	<div class="ideas ideas_calc" style="background: url(images/ideas2.jpg)">
+		<div class="container clearfix">
+			<div class="delivery__text">
+				<div class="table-block">
+					<div class="block-vertical">
+						<div class="ideas__title">
+							Доставка по России
+						</div>
+						<p>
+							Доставляем товары по России <br> 
+							Nullam diam felis, tristique ut tellus in
+						</p>
+						<a href="#" class="item__link">Подробнее</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="card-also">
+		<div class="container small-container">
+			<div class="item__title new_item__title">С этим товаром также покупают</div>
+			<div class="card-also__carousel">
+				<div id="card-carousel" class="owl-carousel owl-theme">
+				  <div class="item">
+				  	<div class="product-list__item">
+							<div class="product-list-inner">
+								<div class="product-list__img">
+									<div class="table-block">
+										<div class="block-vertical">
+											<img src="images/product-list.jpg" alt="">
+										</div>
+									</div>
+								</div>
+								<div class="product-list__desc">
+									<div class="product-list__name">
+										<div class="table-block">
+											<div class="block-vertical">
+												ВИЛЛЬБО — Подвесной светильник с 3 лампами
+											</div>
+										</div>
+									</div>
+									<div class="product-list__price clearfix">
+										<div class="list__price-block">
+											<div class="prev-price">
+												<span class="prev-price__sale">-7%</span>
+												<span class="prev-price__info">
+													60 000 <span class="rub">c</span>
+												</span>
+											</div>
+											<div class="today-price">
+												57 800 <span class="rub">c</span>
+											</div>
+										</div>
+										<a href="#" class="product-list__buy">Купить</a>
+									</div>
+									<div class="product-status">
+										<span class="in-stock">
+											В наличии
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+				  </div>
+				  <div class="item">
+				  	<div class="product-list__item">
+							<div class="product-list-inner">
+								<div class="product-list__img">
+									<div class="table-block">
+										<div class="block-vertical">
+											<img src="images/product-list.jpg" alt="">
+										</div>
+									</div>
+								</div>
+								<div class="product-list__desc">
+									<div class="product-list__name">
+										<div class="table-block">
+											<div class="block-vertical">
+												ВИЛЛЬБО — Подвесной светильник с 3 лампами
+											</div>
+										</div>
+									</div>
+									<div class="product-list__price clearfix">
+										<div class="list__price-block">
+											<div class="prev-price">
+												<span class="prev-price__sale">-7%</span>
+												<span class="prev-price__info">
+													60 000 <span class="rub">c</span>
+												</span>
+											</div>
+											<div class="today-price">
+												57 800 <span class="rub">c</span>
+											</div>
+										</div>
+										<a href="#" class="product-list__buy">Купить</a>
+									</div>
+									<div class="product-status">
+										<span class="in-stock">
+											В наличии
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+				  </div>
+				  <div class="item">
+				  	<div class="product-list__item">
+							<div class="product-list-inner">
+								<div class="product-list__img">
+									<div class="table-block">
+										<div class="block-vertical">
+											<img src="images/product-list.jpg" alt="">
+										</div>
+									</div>
+								</div>
+								<div class="product-list__desc">
+									<div class="product-list__name">
+										<div class="table-block">
+											<div class="block-vertical">
+												ВИЛЛЬБО — Подвесной светильник с 3 лампами
+											</div>
+										</div>
+									</div>
+									<div class="product-list__price clearfix">
+										<div class="list__price-block">
+											<div class="prev-price">
+												<span class="prev-price__sale">-7%</span>
+												<span class="prev-price__info">
+													60 000 <span class="rub">c</span>
+												</span>
+											</div>
+											<div class="today-price">
+												57 800 <span class="rub">c</span>
+											</div>
+										</div>
+										<a href="#" class="product-list__buy">Купить</a>
+									</div>
+									<div class="product-status">
+										<span class="in-stock">
+											В наличии
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+				  </div>
+				  <div class="item">
+				  	<div class="product-list__item">
+							<div class="product-list-inner">
+								<div class="product-list__img">
+									<div class="table-block">
+										<div class="block-vertical">
+											<img src="images/product-list.jpg" alt="">
+										</div>
+									</div>
+								</div>
+								<div class="product-list__desc">
+									<div class="product-list__name">
+										<div class="table-block">
+											<div class="block-vertical">
+												ВИЛЛЬБО — Подвесной светильник с 3 лампами
+											</div>
+										</div>
+									</div>
+									<div class="product-list__price clearfix">
+										<div class="list__price-block">
+											<div class="prev-price">
+												<span class="prev-price__sale">-7%</span>
+												<span class="prev-price__info">
+													60 000 <span class="rub">c</span>
+												</span>
+											</div>
+											<div class="today-price">
+												57 800 <span class="rub">c</span>
+											</div>
+										</div>
+										<a href="#" class="product-list__buy">Купить</a>
+									</div>
+									<div class="product-status">
+										<span class="in-stock">
+											В наличии
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+				  </div>
+				  <div class="item">
+				  	<div class="product-list__item">
+							<div class="product-list-inner">
+								<div class="product-list__img">
+									<div class="table-block">
+										<div class="block-vertical">
+											<img src="images/product-list.jpg" alt="">
+										</div>
+									</div>
+								</div>
+								<div class="product-list__desc">
+									<div class="product-list__name">
+										<div class="table-block">
+											<div class="block-vertical">
+												ВИЛЛЬБО — Подвесной светильник с 3 лампами
+											</div>
+										</div>
+									</div>
+									<div class="product-list__price clearfix">
+										<div class="list__price-block">
+											<div class="prev-price">
+												<span class="prev-price__sale">-7%</span>
+												<span class="prev-price__info">
+													60 000 <span class="rub">c</span>
+												</span>
+											</div>
+											<div class="today-price">
+												57 800 <span class="rub">c</span>
+											</div>
+										</div>
+										<a href="#" class="product-list__buy">Купить</a>
+									</div>
+									<div class="product-status">
+										<span class="in-stock">
+											В наличии
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+				  </div>
+				</div>
+				 
+				<div class="customNavigation">
+				  <a class="btn prev-card">
+				  	<img src="images/also-prev.png" alt="">
+				  </a>
+				  <a class="btn next-card">
+				  	<img src="images/also-next.png" alt="">
+				  </a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer class="footer">
+		<div class="footer__top">
+			<div class="container">
+				<div class="footer-wrapp clearfix">
+					<div class="col-md-2 col-sm-3 col-xs-6">
+						<div class="row">
+							<ul class="footer__list">
+								<li>
+									<a href="#" class="footer__list_title">Компания</a>
+									<ul>
+										<li>
+											<a href="#">О компании</a>
+										</li>
+										<li>
+											<a href="#">Проекты</a>
+										</li>
+										<li>
+											<a href="#">Новости и статьи</a>
+										</li>
+										<li>
+											<a href="#">Контактные данные</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<ul class="footer__list">
+								<li>
+									<a href="#" class="footer__list_title">Покупателям</a>
+									<ul>
+										<li><a href="#">Оплата и доставка</a></li>
+										<li><a href="#">Монтаж</a></li>
+										<li><a href="#">Цены</a></li>
+										<li><a href="#">Помощь</a></li>
+										<li><a href="#">Как сделать заказ</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-2 col-sm-3 col-xs-6">
+						<div class="row">
+							<ul class="footer__list">
+								<li>
+									<a href="#">Продукция</a>
+									<ul>
+										<li><a href="#">Фартук для кухни</a></li>
+										<li><a href="#">Фотопанно</a></li>
+										<li><a href="#">Фотоплитка</a></li>
+										<li><a href="#">Фотообои</a></li>
+									</ul>
+								</li>
+							</ul>
+							<ul class="footer__list">
+								<li>
+									<a href="#">Принимаем</a>
+									<ul class="clearfix">
+										<li class="payment__item">
+											<a href="#">
+												<img src="images/visa.jpg" alt="">
+											</a>
+										</li>
+										<li class="payment__item">
+											<a href="#">
+												<img src="images/mastercard.jpg" alt="">
+											</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-8 col-sm-6 col-xs-12">
+						<div class="row">
+							<div class="footer__title">
+								Pro Fartuk
+							</div>
+							<div class="footer__text">
+								г. Москва, ул. Авиамоторная д. 50, стр. 2 <br>
+								Предупредите нас о своем приезде по телефону: 8 (499) 647–77–39
+							</div>
+							<div class="foot__map">
+								<img src="images/map.jpg" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer__bottom clearfix">
+			<div class="container">
+				<div class="col-lg-3 col-md-3">
+					<div class="row">
+						<div class="social__item">
+							<div class="table-block">
+								<div class="block-vertical">
+									<ul class="socail__list clearfix">
+										<li>
+											<a href="#">
+												<img src="images/twitter.png" alt="">
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="images/facebook.png" alt="">
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="images/vimeo.png" alt="">
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="images/facebook.png" alt="">
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-9">
+					<div class="row">
+						<div class="widget">
+							<div class="table-block">
+								<div class="block-vertical">
+									<img src="images/widget.png" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-12">
+					<div class="row">
+						<div class="footer__design">
+							<div class="table-block">
+								<div class="block-vertical">
+									<span class="design__info">
+										Дизайн разработан в <a href="#">MAKEDESIGN</a>
+									</span>
+									<span class="design__icon">
+										<img src="images/design-logo.png" alt="">
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
 
 <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
@@ -403,14 +1183,22 @@
 		});
 
 		$(document).ready(function() {
-		  var owl = $("#card-thumb");
+		  var owl = $("#card-thumb"),
+		  		card = $('#card-carousel')
 		 
 		  owl.owlCarousel({
 		      items : 3, 
+		      itemsDesktop : [767,3], 
+		      itemsDesktopSmall : [500,3], 
+		      itemsTablet: [380,2],
+		      itemsMobile : false
+		  });
+		  card.owlCarousel({
+		      items : 3, 
 		      itemsDesktop : [1000,2], 
 		      itemsDesktopSmall : [900,2], 
-		      itemsTablet: [600,2],
-		      itemsMobile : [450, 1]
+		      itemsTablet: [600,1],
+		      itemsMobile : false
 		  });
 		 
 		  // Custom Navigation Events
@@ -420,14 +1208,17 @@
 		  $(".prev").click(function(){
 		    owl.trigger('owl.prev');
 		  })
-		  $(".play").click(function(){
-		    owl.trigger('owl.play',1000); //owl.play event accept autoPlay speed as second parameter
+
+		  // Custom Navigation Events
+		  $(".next-card").click(function(){
+		    card.trigger('owl.next');
 		  })
-		  $(".stop").click(function(){
-		    owl.trigger('owl.stop');
+		  $(".prev-card").click(function(){
+		    card.trigger('owl.prev');
 		  })
-		 
+
 		});
 	</script>
+	<script src="js/main.js"></script>
 </body>
 </html>
