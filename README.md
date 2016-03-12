@@ -1,0 +1,1 @@
+Все модалки на ходятся в index.html. Для примера добавил кнопки, чтобы их вызвать http://joxi.ru/LmG75pPSRKgxKm . Еще одна открывается при клике на http://joxi.ru/J2bJDXPh4BgkW2 

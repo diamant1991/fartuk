@@ -695,6 +695,28 @@
 		float: none;
 		margin-bottom: 15px;
 	}
+	.modal-input-block .col-xs-5{
+		width: 100%;
+	}
+	.modal-input__label{
+		height: auto;
+		margin-bottom: 5px;
+	}
+	.modal-dialog{
+		margin: 20px auto;
+	}
+	.modal-input-block .col-xs-7{
+		width: 100%;
+	}
+	.modal__radio{
+		display: block;
+	}
+	.modal__radio-item{
+		margin-bottom: 15px;
+	}
+	.modal__radio-item:last-child{
+		margin-bottom: 0;
+	}
 	.review__header .item__title{
 		float: none;
 		margin-bottom: 15px;
