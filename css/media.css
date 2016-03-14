@@ -1,6 +1,6 @@
 @media(max-width: 1299px){
 	.nav-menu__item > a{
-		padding: 0 10px;
+		padding: 0 15px;
 	}
 	.nav-menu{
 		padding: 0 15px;
@@ -122,6 +122,11 @@
 @media(max-width: 991px){
 	.header__recom{
 		display: none;
+	}
+	.basket-block{
+		height: 50px;
+		width: 75px;
+		text-align: left;
 	}
 	.order__input{
 		width: 100%;
@@ -401,6 +406,9 @@
 	}
 	.project-view-wrapp.second{
 		padding-right: 0;
+	}
+	.product__item-text.large{
+		height: 200px;
 	}
 	.product-price__table{
 		overflow-x: auto;

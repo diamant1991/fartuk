@@ -68,20 +68,23 @@
 					Заказать звонок
 				</a>
 			</div>
-			<div class="header__recom">
-				<div class="table-block">
-					<div class="block-vertical">
-						<a href="#">
-							<img src="images/fazenda.png" alt="">
-						</a>
-					</div>
-				</div>
-			</div>
 			<div class="catalog__link hidden-xs">
 				<div class="table-block">
 					<div class="block-vertical">
 						<a href="#" class="catalog__link-label">
 							<span>Каталог изображений</span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="basket-block hidden-sm">
+				<div class="table-block">
+					<div class="block-vertical">
+						<a href="#" class="basket__link">
+							<span class="basket__icon">
+								<img src="images/basket-icon.png" alt="">
+							</span>
+							<span class="basket__label">2</span>
 						</a>
 					</div>
 				</div>
@@ -200,7 +203,7 @@
 			<a href="#" class="search__btn visible-sm">
 				<img src="images/search-icon.png" alt="">
 			</a>
-			<div class="basket-block">
+			<div class="basket-block visible-sm">
 				<div class="table-block">
 					<div class="block-vertical">
 						<a href="#" class="basket__link">
@@ -319,9 +322,7 @@
 												</div>
 											</td>
 											<td>
-												<a href="#" class="del__basket">
-													<img src="images/del-basket.png" alt="">
-												</a>
+												<a href="#" class="del__basket"></a>
 											</td>
 										</tr>
 										<tr>
@@ -352,9 +353,7 @@
 												</div>
 											</td>
 											<td>
-												<a href="#" class="del__basket">
-													<img src="images/del-basket.png" alt="">
-												</a>
+												<a href="#" class="del__basket"></a>
 											</td>
 										</tr>
 										<tr>
@@ -385,9 +384,7 @@
 												</div>
 											</td>
 											<td>
-												<a href="#" class="del__basket">
-													<img src="images/del-basket.png" alt="">
-												</a>
+												<a href="#" class="del__basket"></a>
 											</td>
 										</tr>
 									</table>
@@ -407,7 +404,7 @@
 									<ul>
 										<li>
 											<input type="radio" name="radio" class="checkbox" id="radio">
-											<label for="radio">Самовывоз со склада <span class="info__icon"><img src="images/info.png" alt=""></span></label>
+											<label for="radio">Самовывоз со склада <span class="info__icon"></span></label>
 										</li>
 										<li>
 											<input type="radio" name="radio" class="checkbox" id="radio2">
@@ -416,14 +413,13 @@
 									</ul>
 								</div>
 								<div class="select">
-									<div class="select-outer">
-										<select name="select2" class="select-outer__item">
-						          <option selected="selected">В пределах МКАД</option>
-						          <option>Select 2</option>
-						          <option>Select 3</option>
-						        </select>
-						        <a class="select-button"></a>
-									</div>
+									<a href="javascript:void(0);" class="slct"></a>
+									<ul class="drop">
+										<li class="active">В пределах МКАД</li>
+										<li>Select 2</li>
+										<li>Select 3</li>
+									</ul>
+									<input type="hidden" id="select">
 								</div>
 								<div class="clear"></div>
 							</div>
@@ -502,7 +498,8 @@
 							<div class="row">
 								<div class="product__item">
 									<a href="#">
-										<div class="product__item-inner" style="background-image: url(images/product1.jpg)">
+										<div class="product__item-inner" style="background-image: url(images/product1.jpg)"></div>
+										<div class="product__item-text">
 											<div class="product__name">
 												Фартух для кухни
 											</div>
@@ -519,7 +516,8 @@
 							<div class="row">
 								<div class="product__item">
 									<a href="#">
-										<div class="product__item-inner" style="background-image: url(images/product2.jpg)">
+										<div class="product__item-inner" style="background-image: url(images/product2.jpg)"></div>
+										<div class="product__item-text">
 											<div class="product__name">
 												Фотопанно
 											</div>
@@ -551,14 +549,15 @@
 					<div class="row">
 						<div class="product__item">
 							<a href="#">
-								<div class="product__item-inner product-large" style="background-image: url(images/product3.jpg)">
+								<div class="product__item-inner product-large" style="background-image: url(images/product3.jpg)"></div>
+								<div class="product__item-text large">
 									<div class="table-block">
 										<div class="block-vertical">
 											<div class="product__name">
-												Фотоплитка
+												Фотопанно
 											</div>
 											<div class="product__price">
-												от 3 000
+												от 500
 												<span class="rub">c</span>
 											</div>
 										</div>
@@ -572,13 +571,18 @@
 					<div class="row">
 						<div class="product__item">
 							<a href="#">
-								<div class="product__item-inner" style="background-image: url(images/product1.jpg)">
-									<div class="product__name">
-										Фартух для кухни
-									</div>
-									<div class="product__price">
-										от 4 500
-										<span class="rub">c</span>
+								<div class="product__item-inner product-large" style="background-image: url(images/product3.jpg)"></div>
+								<div class="product__item-text">
+									<div class="table-block">
+										<div class="block-vertical">
+											<div class="product__name">
+												Фотопанно
+											</div>
+											<div class="product__price">
+												от 500
+												<span class="rub">c</span>
+											</div>
+										</div>
 									</div>
 								</div>
 							</a>

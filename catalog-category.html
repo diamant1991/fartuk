@@ -68,20 +68,23 @@
 					Заказать звонок
 				</a>
 			</div>
-			<div class="header__recom">
-				<div class="table-block">
-					<div class="block-vertical">
-						<a href="#">
-							<img src="images/fazenda.png" alt="">
-						</a>
-					</div>
-				</div>
-			</div>
 			<div class="catalog__link hidden-xs">
 				<div class="table-block">
 					<div class="block-vertical">
 						<a href="#" class="catalog__link-label">
 							<span>Каталог изображений</span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="basket-block hidden-sm">
+				<div class="table-block">
+					<div class="block-vertical">
+						<a href="#" class="basket__link">
+							<span class="basket__icon">
+								<img src="images/basket-icon.png" alt="">
+							</span>
+							<span class="basket__label">2</span>
 						</a>
 					</div>
 				</div>
@@ -200,7 +203,7 @@
 			<a href="#" class="search__btn visible-sm">
 				<img src="images/search-icon.png" alt="">
 			</a>
-			<div class="basket-block">
+			<div class="basket-block visible-sm">
 				<div class="table-block">
 					<div class="block-vertical">
 						<a href="#" class="basket__link">
@@ -364,9 +367,9 @@
 										<div class="sidebar__item">
 											<div class="sidebar__title">Ширина(см)</div>
 											<div class="options__item">
-												<input type="text" placeholder="от 20" class="options__input">
+												<input type="text" placeholder="от 20" class="options__input min_options__input">
 												<span class="options__text">—</span>
-												<input type="text" placeholder="до 40" class="options__input">
+												<input type="text" placeholder="до 40" class="options__input max_options__input">
 											</div>
 											<div class="slider-range-min"></div>
 											<div class="slider__value clearfix">
@@ -377,11 +380,11 @@
 										<div class="sidebar__item">
 											<div class="sidebar__title">Длина(см)</div>
 											<div class="options__item">
-												<input type="text" placeholder="от 20" class="options__input">
+												<input type="text" placeholder="от 20" class="options__input min_options__input2">
 												<span class="options__text">—</span>
-												<input type="text" placeholder="до 40" class="options__input">
+												<input type="text" placeholder="до 40" class="options__input max_options__input2">
 											</div>
-											<div class="slider-range-min"></div>
+											<div class="slider-range-min2"></div>
 											<div class="slider__value clearfix">
 												<span class="value__min">0</span>
 												<span class="value__max">120</span>
@@ -399,7 +402,7 @@
 									<div class="sidebar__options">
 										<div class="clear__filter">
 											<a href="#" class="clear__filter-link">
-												<img src="images/del-filter.png" alt="">
+												<span class="clear__filter-icon"></span>
 												<span>Очистить фильтры</span>
 											</a>
 										</div>
@@ -414,13 +417,16 @@
 								<div class="sorting-filter clearfix">
 									<div class="sorting__by">
 										<span class="filter__text">Сортировать по:</span>
-										<div class="select-outer">
-											<select name="select2" class="select-outer__item">
-							          <option selected="selected">По названию</option>
-							          <option>Select 2</option>
-							          <option>Select 3</option>
-							        </select>
-							        <a class="select-button"></a>
+										<div class="select-item__filter">
+											<div class="select">
+												<a href="javascript:void(0);" class="slct"></a>
+												<ul class="drop">
+													<li class="active">По названию</li>
+													<li>Select 2</li>
+													<li>Select 3</li>
+												</ul>
+												<input type="hidden" id="select">
+											</div>
 										</div>
 									</div>
 									<div class="sorting-view">
@@ -960,14 +966,81 @@
 	<script src="js/vendor.min.js"></script>
 	<script src="js/jqueryui-slider.min.js"></script>
 	<script>
-		$(function() {
-    $( ".slider-range-min" ).slider({
-      range: "min",
-      value: 60,
-      min: 0,
-      max: 120
-    });
-  });
+
+	$(function() {
+		var $slider = $('.slider-range-min'),
+    $lower = $('.min_options__input'),
+    $upper = $('.max_options__input'),
+    min_rent = 25,
+    max_rent = 80;
+
+		$lower.val(min_rent);
+		$upper.val(max_rent);
+
+		$('.slider-range-min').slider({
+		    range: true,
+		    min: 0,
+		    max: 120,
+		    values: [min_rent, max_rent],
+		    slide: function(event,ui) {
+		        $lower.val(ui.values[0]);
+		        $upper.val(ui.values[1]);
+		    }
+		});
+		$lower.change(function () {
+		    var low = $lower.val(),
+		        high = $upper.val();
+		    low = Math.min(low, high);
+		    $lower.val(low);
+		    $slider.slider('values', 0, low);
+		});
+
+		$upper.change(function () {
+		    var low = $lower.val(),
+		        high = $upper.val();
+		    high = Math.max(low, high);
+		    $upper.val(high);
+		    $slider.slider('values', 1, high);
+		});
+	});
+
+	$(function() {
+		var $slider = $('.slider-range-min2'),
+    $lower = $('.min_options__input2'),
+    $upper = $('.max_options__input2'),
+    min_rent = 15,
+    max_rent = 100;
+
+		$lower.val(min_rent);
+		$upper.val(max_rent);
+
+		$('.slider-range-min2').slider({
+		    range: true,
+		    min: 0,
+		    max: 120,
+		    values: [min_rent, max_rent],
+		    slide: function(event,ui) {
+		        $lower.val(ui.values[0]);
+		        $upper.val(ui.values[1]);
+		    }
+		});
+		$lower.change(function () {
+		    var low = $lower.val(),
+		        high = $upper.val();
+		    low = Math.min(low, high);
+		    $lower.val(low);
+		    $slider.slider('values', 0, low);
+		});
+
+		$upper.change(function () {
+		    var low = $lower.val(),
+		        high = $upper.val();
+		    high = Math.max(low, high);
+		    $upper.val(high);
+		    $slider.slider('values', 1, high);
+		});
+	});
+  
 	</script>
 	<script src="js/main.js"></script>
 </body>

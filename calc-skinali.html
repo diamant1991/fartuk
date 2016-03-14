@@ -68,20 +68,23 @@
 					Заказать звонок
 				</a>
 			</div>
-			<div class="header__recom">
-				<div class="table-block">
-					<div class="block-vertical">
-						<a href="#">
-							<img src="images/fazenda.png" alt="">
-						</a>
-					</div>
-				</div>
-			</div>
 			<div class="catalog__link hidden-xs">
 				<div class="table-block">
 					<div class="block-vertical">
 						<a href="#" class="catalog__link-label">
 							<span>Каталог изображений</span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="basket-block hidden-sm">
+				<div class="table-block">
+					<div class="block-vertical">
+						<a href="#" class="basket__link">
+							<span class="basket__icon">
+								<img src="images/basket-icon.png" alt="">
+							</span>
+							<span class="basket__label">2</span>
 						</a>
 					</div>
 				</div>
@@ -200,7 +203,7 @@
 			<a href="#" class="search__btn visible-sm">
 				<img src="images/search-icon.png" alt="">
 			</a>
-			<div class="basket-block">
+			<div class="basket-block visible-sm">
 				<div class="table-block">
 					<div class="block-vertical">
 						<a href="#" class="basket__link">
@@ -305,8 +308,8 @@
 											</div>
 											<div class="calc__help">
 												<a href="#">
-													<img src="images/info.png" alt="">
-													Помощь
+													<span class="info__icon"></span>
+													<span>Помощь</span>
 												</a>
 											</div>
 										</div>
@@ -420,8 +423,8 @@
 											</div>
 											<div class="calc__help">
 												<a href="#">
-													<img src="images/info.png" alt="">
-													Помощь
+													<span class="info__icon"></span>
+													<span>Помощь</span>
 												</a>
 											</div>
 										</div>
@@ -431,17 +434,14 @@
 											Выберите свой город
 										</div>
 										<div class="calc__select">
-											<div class="calc__select">
-												<div class="calc__select">
-													<div class="select-outer">
-														<select name="select2" class="select-outer__item">
-										          <option selected="selected">Москва</option>
-										          <option>Select 2</option>
-										          <option>Select 3</option>
-										        </select>
-										        <a class="select-button"></a>
-													</div>
-												</div>
+											<div class="select">
+												<a href="javascript:void(0);" class="slct"></a>
+												<ul class="drop">
+													<li class="active">Москва</li>
+													<li>Select 2</li>
+													<li>Select 3</li>
+												</ul>
+												<input type="hidden" id="select">
 											</div>
 										</div>
 									</div>
@@ -477,9 +477,7 @@
 									<div class="calc__order">
 										<a href="#" class="calc__order-link">Оформить заказ</a>
 										<a href="#" class="calc__add-basket">
-											<span>
-												<img src="images/basket-blue.png" alt="">
-											</span>
+											<span class="calc__add-basket-icon"></span>
 											<span class="add-basket__text">Добавить в корзину</span>
 										</a>
 								</div>
@@ -521,6 +519,8 @@
 						<div class="product__item">
 							<a href="#">
 								<div class="product__item-inner" style="background-image: url(images/product2.jpg)">
+								</div>
+								<div class="product__item-text">
 									<div class="product__name">
 										Фотопанно
 									</div>
@@ -538,6 +538,8 @@
 						<div class="product__item">
 							<a href="#">
 								<div class="product__item-inner" style="background-image: url(images/product2.jpg)">
+								</div>
+								<div class="product__item-text">
 									<div class="product__name">
 										Фотопанно
 									</div>
@@ -555,6 +557,8 @@
 						<div class="product__item">
 							<a href="#">
 								<div class="product__item-inner" style="background-image: url(images/product2.jpg)">
+								</div>
+								<div class="product__item-text">
 									<div class="product__name">
 										Фотопанно
 									</div>
