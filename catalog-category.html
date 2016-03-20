@@ -93,7 +93,7 @@
 				<div class="table-block">
 					<div class="block-vertical">
 						<a class="enter__link-label" data-toggle="modal" data-target="#myModal">
-							Вход
+							Кабинет
 						</a>
 					</div>
 				</div>
@@ -219,7 +219,7 @@
 				<div class="table-block">
 					<div class="block-vertical">
 						<a class="enter__link-label" data-toggle="modal" data-target="#myModal">
-							Вход
+							Кабинет
 						</a>
 					</div>
 				</div>
@@ -368,8 +368,6 @@
 											<div class="sidebar__title">Ширина(см)</div>
 											<div class="options__item">
 												<input type="text" placeholder="от 20" class="options__input min_options__input">
-												<span class="options__text">—</span>
-												<input type="text" placeholder="до 40" class="options__input max_options__input">
 											</div>
 											<div class="slider-range-min"></div>
 											<div class="slider__value clearfix">
@@ -381,8 +379,6 @@
 											<div class="sidebar__title">Длина(см)</div>
 											<div class="options__item">
 												<input type="text" placeholder="от 20" class="options__input min_options__input2">
-												<span class="options__text">—</span>
-												<input type="text" placeholder="до 40" class="options__input max_options__input2">
 											</div>
 											<div class="slider-range-min2"></div>
 											<div class="slider__value clearfix">
@@ -967,7 +963,7 @@
 	<script src="js/jqueryui-slider.min.js"></script>
 	<script>
 
-	$(function() {
+	/*$(function() {
 		var $slider = $('.slider-range-min'),
     $lower = $('.min_options__input'),
     $upper = $('.max_options__input'),
@@ -1039,7 +1035,33 @@
 		    $upper.val(high);
 		    $slider.slider('values', 1, high);
 		});
-	});
+	});*/
+
+	$(function() {
+    $( ".slider-range-min" ).slider({
+      range: "min",
+      value: 37,
+      min: 0,
+      max: 120,
+      slide: function( event, ui ) {
+        $( ".min_options__input" ).val( ui.value );
+      }
+    });
+    $( ".min_options__input" ).val( $( ".slider-range-min" ).slider( "value" ) );
+  });
+
+  $(function() {
+    $( ".slider-range-min2" ).slider({
+      range: "min",
+      value: 37,
+      min: 0,
+      max: 120,
+      slide: function( event, ui ) {
+        $( ".min_options__input2" ).val( ui.value );
+      }
+    });
+    $( ".min_options__input2" ).val( $( ".slider-range-min2" ).slider( "value" ) );
+  });
   
 	</script>
 	<script src="js/main.js"></script>

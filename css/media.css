@@ -17,7 +17,6 @@
 	.card-also__carousel{
 		padding: 0 25px;
 	}
-
 }
 @media(max-width: 1199px){
 	.logo{
@@ -71,7 +70,7 @@
 		margin-left: 0;
 	}
 	.enter__link{
-		width: 9%;
+		width: 10%;
 	}
 	.calc__help{
 		padding-left: 0;
@@ -118,10 +117,17 @@
 	.visible-sm{
 		display: none !important;
 	}
+	.our-partner__carousel{
+		width: 820px;
+		margin: auto;
+	}
 }
 @media(max-width: 991px){
 	.header__recom{
 		display: none;
+	}
+	.enter__link{
+		width: 12%;
 	}
 	.basket-block{
 		height: 50px;
@@ -942,9 +948,6 @@
 		text-align: center;
 		height: auto;
 		padding: 10px 0;
-	}
-	.options__input{
-		width: 90px;
 	}
 	.cat-list__link a{
 		margin: auto;
