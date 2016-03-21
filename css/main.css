@@ -463,13 +463,24 @@ body {
   position: relative;
   overflow: hidden;
   font-family: 'PragmaticaBoldReg';
+  -webkit-transition: all 0.1s ease;
+  -moz-transition: all 0.1s ease;
+  -o-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 .product__item > a:hover .product__item-inner {
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  -o-transform: scale(1.1);
-  transform: scale(1.1);
+  -webkit-transform: scale(1.15);
+  -moz-transform: scale(1.15);
+  -ms-transform: scale(1.15);
+  -o-transform: scale(1.15);
+  transform: scale(1.15);
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 .product__item > a .rub {
   font-size: 22px;
@@ -487,10 +498,10 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-weight: bold;
   padding-top: 40px;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 .product-large {
   height: 420px;
@@ -700,10 +711,10 @@ body {
   overflow: hidden;
 }
 .complete__img img {
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
 }
 .complete {
   padding-top: 70px;
@@ -757,10 +768,10 @@ body {
   position: relative;
 }
 .complete__item-inner .white__btn {
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
 }
 .complete__item-inner:hover .white__btn {
   background: #9bcf4c;
@@ -768,11 +779,11 @@ body {
   border-color: #9bcf4c;
 }
 .complete__item-inner:hover .complete__img img {
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  -o-transform: scale(1.1);
-  transform: scale(1.1);
+  -webkit-transform: scale(1.15);
+  -moz-transform: scale(1.15);
+  -ms-transform: scale(1.15);
+  -o-transform: scale(1.15);
+  transform: scale(1.15);
 }
 .complete__info {
   padding: 20px 10px;
@@ -1682,10 +1693,10 @@ body {
   background-color: #89b34a;
   padding-top: 10px;
   padding-left: 20px;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
 }
 .product-catalog__img.large {
   height: 300px;
@@ -1705,11 +1716,11 @@ body {
   position: relative;
 }
 .product-catalog__item > a:hover .product-catalog__img {
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  -o-transform: scale(1.1);
-  transform: scale(1.1);
+  -webkit-transform: scale(1.15);
+  -moz-transform: scale(1.15);
+  -ms-transform: scale(1.15);
+  -o-transform: scale(1.15);
+  transform: scale(1.15);
 }
 .product-catalog__content {
   margin-left: -20px;
@@ -3506,6 +3517,9 @@ body {
 .order__back a {
   color: #5fa8d3;
 }
+.order__back a:hover {
+  color: #89b34a;
+}
 .delivery-footer {
   background: #3b3e3f;
   padding: 35px 0;
@@ -4995,11 +5009,11 @@ body {
   box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.1);
 }
 .list-block__inner:hover .cat-list__img img {
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  -o-transform: scale(1.1);
-  transform: scale(1.1);
+  -webkit-transform: scale(1.15);
+  -moz-transform: scale(1.15);
+  -ms-transform: scale(1.15);
+  -o-transform: scale(1.15);
+  transform: scale(1.15);
 }
 .list-block__inner:hover .cat-list__link-icon {
   background: #9bcf4c url(../images/car-white-arrow.png) no-repeat 50%;
@@ -5011,10 +5025,10 @@ body {
   overflow: hidden;
 }
 .cat-list__img img {
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
 }
 .cat-advantages {
   padding: 65px 0 65px 20px;
