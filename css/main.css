@@ -2148,6 +2148,9 @@ body {
   color: #5fa8d3;
   margin-right: 10px;
 }
+.basket__filter a:hover {
+  text-decoration: underline;
+}
 .basket__filter a:last-child {
   margin-right: 0;
 }
@@ -2245,6 +2248,9 @@ body {
 }
 .basket-order__var a {
   color: #5fa8d3;
+}
+.basket-order__var a:hover {
+  text-decoration: underline;
 }
 .basket-order__list,
 .basket-order__link {
