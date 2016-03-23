@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="keywords" content="" >
 	<meta name="description" content="">
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,600' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,600,600italic,700italic' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/vendor.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/media.css">
@@ -339,18 +339,18 @@
 												<li>
 													<input type="checkbox" class="check" id="check3">
 													<label for="check3">Световые технологии (32)</label>
+													<div class="list__model">
+														<a href="#">
+															<span>25 моделей</span>
+															<img src="images/eye.png" alt="">
+														</a>
+													</div>
 												</li>
 												<li>
 													<input type="checkbox" class="check" id="check4">
 													<label for="check4">Арт-кухня (34)</label>
 												</li>
 											</ul>
-										</div>
-										<div class="list__model">
-											<a href="#">
-												<span>25 моделей</span>
-												<img src="images/eye.png" alt="">
-											</a>
 										</div>
 										</div>
 										<div class="sidebar__item">
@@ -368,6 +368,8 @@
 											<div class="sidebar__title">Ширина(см)</div>
 											<div class="options__item">
 												<input type="text" placeholder="от 20" class="options__input min_options__input">
+												<span class="options__arrow">—</span>
+												<input type="text" placeholder="до 40" class="options__input max_options__input">
 											</div>
 											<div class="slider-range-min"></div>
 											<div class="slider__value clearfix">
@@ -379,6 +381,8 @@
 											<div class="sidebar__title">Длина(см)</div>
 											<div class="options__item">
 												<input type="text" placeholder="от 20" class="options__input min_options__input2">
+												<span class="options__arrow">—</span>
+												<input type="text" placeholder="до 40" class="options__input max_options__input2">
 											</div>
 											<div class="slider-range-min2"></div>
 											<div class="slider__value clearfix">
@@ -963,7 +967,7 @@
 	<script src="js/jqueryui-slider.min.js"></script>
 	<script>
 
-	/*$(function() {
+	$(function() {
 		var $slider = $('.slider-range-min'),
     $lower = $('.min_options__input'),
     $upper = $('.max_options__input'),
@@ -1035,9 +1039,9 @@
 		    $upper.val(high);
 		    $slider.slider('values', 1, high);
 		});
-	});*/
+	});
 
-	$(function() {
+	/*$(function() {
     $( ".slider-range-min" ).slider({
       range: "min",
       value: 37,
@@ -1048,9 +1052,9 @@
       }
     });
     $( ".min_options__input" ).val( $( ".slider-range-min" ).slider( "value" ) );
-  });
+  });*/
 
-  $(function() {
+  /*$(function() {
     $( ".slider-range-min2" ).slider({
       range: "min",
       value: 37,
@@ -1061,7 +1065,7 @@
       }
     });
     $( ".min_options__input2" ).val( $( ".slider-range-min2" ).slider( "value" ) );
-  });
+  });*/
   
 	</script>
 	<script src="js/main.js"></script>
