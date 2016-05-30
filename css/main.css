@@ -850,8 +850,37 @@ body {
   margin-right: 20px;
 }
 .ideas {
-  background: url(../images/ideas.jpg);
+  position: relative;
   height: 200px;
+  overflow: hidden;
+}
+.ideas:after {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.5);
+}
+.instagram-list {
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+.instagram-item {
+  height: 100%;
+  width: 11.1%;
+  float: left;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  -o-background-size: cover;
+  background-size: cover;
 }
 .ideas__text {
   text-align: right;
@@ -859,6 +888,8 @@ body {
   width: 280px;
   height: 200px;
   color: #fff;
+  position: relative;
+  z-index: 3;
 }
 .ideas__text p {
   line-height: 1.3;

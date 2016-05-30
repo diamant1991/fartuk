@@ -29,6 +29,9 @@
 		height: auto;
 		padding: 15px;
 	}
+	.instagram-item{
+		width: 16.6%;
+	}
 	.category-filter-wrapp.second .category-filter__text{
 		float: none;
 		text-align: center;
@@ -128,6 +131,9 @@
 	}
 	.enter__link{
 		width: 12%;
+	}
+	.instagram-item{
+		width: 20%;
 	}
 	.basket-block{
 		height: 50px;
@@ -409,6 +415,9 @@
 	}
 	.project-view__content{
 		padding-left: 0;
+	}
+	.instagram-item{
+		width: 33.3%;
 	}
 	.project-view-wrapp.second{
 		padding-right: 0;
