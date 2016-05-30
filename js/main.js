@@ -73,3 +73,33 @@ $(".scroll-btn").click(function () {
   $("html:not(:animated),body:not(:animated)").animate({scrollTop: destination}, 1000);
   return false;
 });
+
+$(document).ready(function() {
+	var navPos, winPos, navHeight;
+	  
+	function refreshVar() {
+	  navPos = $('.inner-menu').offset().top;
+	  navHeight = $('.inner-menu').outerHeight(true);
+	}
+
+	refreshVar();
+	$(window).resize(refreshVar);
+
+	  $('<div class="clone-nav"></div>').insertBefore('.inner-menu').css('height', navHeight).hide();
+	  
+	$(window).scroll(function() {
+	  winPos = $(window).scrollTop();
+	  
+	  if (winPos >= navPos) {
+	    $('.inner-menu').addClass('fixed');  
+	    $('.clone-nav').show();
+	  }  
+	  else {
+	    $('.inner-menu').removeClass('fixed shadow');
+	    $('.clone-nav').hide();
+	  }
+	});
+
+});
+
+

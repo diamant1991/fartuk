@@ -1344,6 +1344,15 @@ body {
 .inner-menu {
   background: #f4f4f4;
 }
+.inner-menu.fixed {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  -webkit-box-shadow: 0px 1px 14px -2px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 1px 14px -2px rgba(0, 0, 0, 0.5);
+}
 .product-info__features {
   padding-right: 15px;
 }
