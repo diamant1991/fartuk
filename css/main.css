@@ -874,13 +874,11 @@ body {
   top: 0;
 }
 .instagram-item {
-  height: 100%;
-  width: 11.1%;
-  float: left;
   background-repeat: no-repeat;
   background-position: 50%;
   -o-background-size: cover;
   background-size: cover;
+  height: 200px;
 }
 .ideas__text {
   text-align: right;

@@ -792,15 +792,44 @@
 
 	<div class="ideas">
 		<div class="instagram-list clearfix">
-			<div class="instagram-item" style="background-image: url(images/img-inst1.jpg)"></div>
-			<div class="instagram-item" style="background-image: url(images/img-inst2.jpg)"></div>
-			<div class="instagram-item" style="background-image: url(images/img-inst1.jpg)"></div>
-			<div class="instagram-item" style="background-image: url(images/img-inst2.jpg)"></div>
-			<div class="instagram-item" style="background-image: url(images/img-inst1.jpg)"></div>
-			<div class="instagram-item" style="background-image: url(images/img-inst2.jpg)"></div>
-			<div class="instagram-item" style="background-image: url(images/img-inst1.jpg)"></div>
-			<div class="instagram-item" style="background-image: url(images/img-inst2.jpg)"></div>
-			<div class="instagram-item" style="background-image: url(images/img-inst1.jpg)"></div>
+			<div id="instagram" class="owl-carousel owl-theme">
+			  <div class="item">
+			  	<div class="instagram-item" style="background-image: url(images/img-inst1.jpg)"></div>
+			  </div>
+			  <div class="item">
+			  	<div class="instagram-item" style="background-image: url(images/img-inst2.jpg)"></div>
+			  </div>
+			  <div class="item">
+			  	<div class="instagram-item" style="background-image: url(images/img-inst1.jpg)"></div>
+			  </div>
+			  <div class="item">
+			  	<div class="instagram-item" style="background-image: url(images/img-inst2.jpg)"></div>
+			  </div>
+			  <div class="item">
+			  	<div class="instagram-item" style="background-image: url(images/img-inst1.jpg)"></div>
+			  </div>
+			  <div class="item">
+			  	<div class="instagram-item" style="background-image: url(images/img-inst2.jpg)"></div>
+			  </div>
+			  <div class="item">
+			  	<div class="instagram-item" style="background-image: url(images/img-inst1.jpg)"></div>
+			  </div>
+			  <div class="item">
+			  	<div class="instagram-item" style="background-image: url(images/img-inst2.jpg)"></div>
+			  </div>
+			  <div class="item">
+			  	<div class="instagram-item" style="background-image: url(images/img-inst1.jpg)"></div>
+			  </div>
+			  <div class="item">
+			  	<div class="instagram-item" style="background-image: url(images/img-inst2.jpg)"></div>
+			  </div>
+			  <div class="item">
+			  	<div class="instagram-item" style="background-image: url(images/img-inst1.jpg)"></div>
+			  </div>
+			  <div class="item">
+			  	<div class="instagram-item" style="background-image: url(images/img-inst2.jpg)"></div>
+			  </div>
+			</div>
 		</div>
 		<div class="container clearfix">
 			<div class="ideas__text">
@@ -1560,14 +1589,25 @@
 		$(document).ready(function() {
  
   var owl = $("#popular");
+  var instagram = $('#instagram');
  
-  owl.owlCarousel({
-      items : 6,
-      itemsDesktop : [1200,5],
-      itemsDesktopSmall : [991,4],
-      itemsTablet: [600,3],
+	  owl.owlCarousel({
+	    items : 6,
+	    itemsDesktop : [1200,5],
+	    itemsDesktopSmall : [991,4],
+	    itemsTablet: [600,3],
+	    itemsMobile : [450,2]
+		});
+
+		 instagram.owlCarousel({
+      items : 9,
+      autoPlay: 3000,
+      paginationSpeed: 500,
+      itemsDesktop : [1200,6],
+      itemsDesktopSmall : [991,5],
+      itemsTablet: [767,3],
       itemsMobile : [450,2]
-  });
+	  });
  
 	  // Custom Navigation Events
 	  $(".next").click(function(){
@@ -1576,8 +1616,8 @@
 	  $(".prev").click(function(){
 	    owl.trigger('owl.prev');
 	  })
- 
-});
+
+	});
 	</script>
 	<script src="js/main.js"></script>
 </body>
