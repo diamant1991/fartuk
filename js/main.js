@@ -74,6 +74,20 @@ $(".scroll-btn").click(function () {
   return false;
 });
 
+$(function() {
+	$('.search-button').click(function(e) {
+		e.preventDefault();
+		var search = $('#search-form');
+		if(!search.hasClass('visible')){
+			search.addClass('visible');
+		}
+		else{
+			search.removeClass('visible');
+		}
+	});
+});
+
+
 $(document).ready(function() {
 	var navPos, winPos, navHeight;
 	  
@@ -101,5 +115,4 @@ $(document).ready(function() {
 	});
 
 });
-
 

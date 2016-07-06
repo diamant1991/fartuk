@@ -6089,22 +6089,6 @@ body {
   margin-bottom: 20px;
   font-size: 16px;
 }
-.text-content ul li {
-  padding-left: 25px;
-  position: relative;
-  margin-bottom: 5px;
-}
-.text-content ul li:before {
-  content: "";
-  display: block;
-  position: absolute;
-  z-index: 2;
-  left: 0;
-  top: 3px;
-  width: 15px;
-  height: 2px;
-  background: #89b34a;
-}
 .text-content img {
   margin-bottom: 20px;
 }
@@ -6122,4 +6106,105 @@ body {
 .product-info__baner-link:hover {
   background: #89b34a;
   border-color: #89b34a;
+}
+ul li {
+  position: relative;
+  padding-left: 27px;
+  padding-top: 0;
+  margin-bottom: 10px;
+}
+ul li:before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  display: block;
+  left: 0;
+  top: 1px;
+  width: 17px;
+  height: 2px;
+  background: #89b34a;
+}
+.catalog-menu li,
+.nav-menu li,
+.breadcrumb ul li,
+.tag ul li,
+.footer ul li,
+.inner-menu-list li,
+.mobile-nav-wrapp ul li,
+.more-content__info-check ul li,
+.bxslider li {
+  padding-left: 0;
+  margin-bottom: 0;
+}
+.catalog-menu li:before,
+.nav-menu li:before,
+.breadcrumb ul li:before,
+.tag ul li:before,
+.footer ul li:before,
+.inner-menu-list li:before,
+.mobile-nav-wrapp ul li:before,
+.more-content__info-check ul li:before,
+.bxslider li:before {
+  content: none;
+}
+.sidebar__check ul li,
+.basket-order__price ul li,
+.contact__text-list li,
+.category-filter__item ul li,
+.process__radio ul li,
+.order__complete-info ul li,
+.subscribe__list ul li {
+  padding-left: 0;
+}
+.sidebar__check ul li:before,
+.basket-order__price ul li:before,
+.contact__text-list li:before,
+.category-filter__item ul li:before,
+.process__radio ul li:before,
+.order__complete-info ul li:before,
+.subscribe__list ul li:before {
+  content: none;
+}
+.drop li:before,
+.product-info__features ul li:before {
+  content: none;
+}
+.category-search{
+  height: 45px;
+  background: #f4f4f4;
+  padding: 0 15px 0 30px;
+  margin-bottom: 35px;
+}
+.category-search .pull-left{
+  padding-top: 7px;
+}
+.category-search .pull-right{
+  padding-top: 14px;
+}
+ .category-search .popular-image__display{
+  padding-top: 0;
+ }
+ .middle{
+  display: inline-block;
+  vertical-align: middle;
+ }
+ .search-input{
+  display: block;
+  width: 300px;
+  height: 30px;
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 0 10px;
+ }
+ .category-search__form{
+  padding-left: 10px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  transition: all .3s;
+ }
+.category-search__form.visible{
+  opacity: 1;
+  visibility: visible;
 }

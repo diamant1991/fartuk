@@ -413,8 +413,14 @@
 	.project-view-wrapp.second{
 		padding-right: 0;
 	}
+	.category-search{
+		padding: 0 10px;
+	}
 	.product__item-text.large{
 		height: 200px;
+	}
+	.search-input{
+		width: 150px;
 	}
 	.product-price__table{
 		overflow-x: auto;
